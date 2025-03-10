@@ -1,0 +1,937 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Lato", arial;
+    user-select: none;
+    margin: 0;
+    padding: 0; 
+    border: none;
+    overflow: auto;
+    background: rgba(208, 192, 250, 0.034);
+}
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+::-webkit-scrollbar {
+       width: 10px;
+    }
+      /* Track */
+   ::-webkit-scrollbar-track {
+       background: transparent;
+   }
+
+   /* Handle */
+   ::-webkit-scrollbar-thumb {
+       background: rgb(236, 234, 234);
+       border: 7px solid white;
+       border-radius:5px;
+   }
+
+   /* Handle on hover */
+   ::-webkit-scrollbar-thumb:hover {
+       background: #8831fa7a;
+}
+
+header {
+    position: fixed;
+    z-index: 3;
+    height: 63px;
+    width: 100%;
+    margin: -2px 0 0 0;
+    background: white;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 0px 3px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+header .a {
+    height: 47px;
+    width: 94%;
+    border: 2px solid transparent;
+    display: flex;
+    justify-content: space-between;
+}
+header .a .logoside {
+    height: 45px;
+    width: auto;
+}
+header .a .rightside {
+    height: 42px;
+    width: auto;
+    border: 2px solid transparent;
+    margin: auto 10px 0 0;
+    display: flex;
+    justify-content: flex-end;
+    overflow: visible;
+}
+header .a .rightside .men {
+    height: 45px;
+    width: 45px;
+    border-radius: 2px;
+    margin: -2px 5px 1px 0;
+    cursor: pointer;
+    border-radius: 50%;
+    border: 3px solid rgb(70, 200, 240);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    transition: all 0.2s ease-in-out;
+    transform: scale(0.90);
+}
+header .a .rightside .men:hover {
+    transform: scale(0.93);
+}
+header .a .rightside .men .lines {
+    height: 5px;
+    width: 30px;
+    background: black;
+    border-radius: 5px;
+    margin: 1px 0 3px 8px;
+}
+header .a .rightside .men .lines:first-child {
+    margin: 5px 0 3px 8px;
+}
+header .a .rightside .men .lines:last-child {
+    width: 18px;
+}
+header .a .rightside .profile {
+    height: 38px;
+    width: 230px;
+    background:  none;
+    border-radius: 7px;
+    margin: auto 10px 0 0;
+    display: flex;
+    justify-content: flex-end;
+    transition: 0.2s all ease-in-out;
+    cursor: pointer;
+}
+header .a .rightside .profile:hover {
+    background: rgba(0, 162, 255, 0.1);
+    transform: scale(0.96);
+}
+header .a .rightside .profile .outliner {
+    background-image: url(../images/rubish.jpg);
+    background-size:auto 32px;
+    background-repeat: no-repeat;
+    height: 27px;
+    width: 27px;
+    border-radius: 50%;
+    border: 3.4px solid white;
+    outline: 3.4px solid #203238;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 3px 25px 0 0;
+}
+header .a .rightside .profile .pdetail {
+    height: 100%;
+    width: 120px;
+    border: 1px solid transparent;
+    display: flex;
+    flex-direction: column;
+}
+header .a .rightside .profile .pdetail .pname {
+    color: black;
+    font-family: "Nunito";
+    font-size: small;
+    font-weight: bold;
+    margin: auto 6px 0 auto;
+}
+header .a .rightside .profile .pdetail .pspec {
+    color: lightgrey/*#00ffcc*/;
+    font-family: "Nunito";
+    font-size: small;
+    font-weight: bold;
+    margin: 0 6px 0 auto;
+}
+header .a .rightside .profile .notifications {
+    height: 38px;
+    width: 38px;
+    background: rgba(0, 162, 255, 0.1);
+    border: none;
+    border-radius: 50%;
+    margin: auto 0px 0 0;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.2s ease-in-out;
+}
+header .a .rightside .profile .notifications::after {
+    position: absolute;
+    margin: -28px -25px 0 0;
+    content: "7";
+    text-align: center;
+    border: 3px solid white;
+    height: 14px;
+    width: 14px;
+    background: red;
+    border-radius: 50%;
+    color: white;
+    font-family: "Nunito", "Fredoka";
+    font-size: 10px; 
+    font-weight: bold;
+}
+header .a .rightside .profile .notifications > svg {
+    height: 20px;
+    width: auto;
+    &:hover, &:focus {
+    animation: bellshake .5s cubic-bezier(.36,.07,.19,.97) both;
+    backface-visibility: hidden;
+    transform-origin: top right;
+  }
+}
+@keyframes bellshake {
+  0% { transform: rotate(0); }
+  15% { transform: rotate(5deg); }
+  30% { transform: rotate(-5deg); }
+  45% { transform: rotate(4deg); }
+  60% { transform: rotate(-4deg); }
+  75% { transform: rotate(2deg); }
+  85% { transform: rotate(-2deg); }
+  92% { transform: rotate(1deg); }
+  100% { transform: rotate(0); }
+}
+
+header .a .rightside .addbutton {
+    height: 45px;
+    width: 177px;
+    background: rgb(70, 200, 240);
+    margin: auto 5px 0 0;
+    color: white;
+    font-family: "Nunito";
+    font-weight: bold;
+    border: 2px solid transparent;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: background 0.2s ease-in-out;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: scale(0.93);
+}
+header .a .rightside .addbutton:hover {
+    background: rgb(23, 240, 186);
+    height: 45px;
+}
+header .a .rightside .addbutton > svg {
+    height: 20px;
+    width: auto;
+    margin: -1px 7px 0 0px;
+}
+header .a .rightside .ptype {
+    height: 42px;
+    width: 177px;
+    margin: -2px 5px 0 0;
+    color: black;
+    font-family: "Nunito";
+    font-weight: bold;
+    border: 2px solid transparent;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background 0.2s ease-in-out;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: scale(0.93);
+    transition: 0.2s background ease-in-out;
+}
+header .a .rightside .ptype > svg {
+    height: 20px;
+    width: auto;
+    margin: -2.90px 4px 0 -7px;
+}
+header .a .rightside .ptype:hover {
+    background: rgba(0, 162, 255, 0.1);
+}
+header .a .rightside .ptype .nomargin {
+    margin: 0 0 0 10px;
+}
+.drop {
+    position: fixed;
+    height: 0;
+    width: 100%;
+    background: rgb(23, 240, 186);
+    transition: 0.1s;
+}
+body:has(.ptype:hover) .drop {
+    height: 77vh;
+}
+.bothnavs {
+    position: fixed;
+    height: 100vh;
+    width: 322px;
+    background: transparent;
+    display: flex;
+    justify-content: space-between;
+    z-index: 1;
+}
+.rnav {
+    top: 0; right: 0; left: 0;
+    position: fixed;
+    height: 100vh;
+    width: 370px;
+    background: black;
+    margin: auto 0 0 auto;
+    border: none;
+    transform: translateY(-500%);
+    transition: all 0.2s; 
+    display: flex;
+    justify-content: center;
+    z-index: 2;
+}
+.rnav .lall {
+    max-height: 88vh;
+    width: 94%;
+    border: 2px solid transparent;
+    border-radius: 5px;
+    margin: 58px 0 0 0;
+    display: flex;
+    flex-direction: column;
+    overflow-y: scroll;
+    transition: 0.2s;
+}
+.rnav .lall .nlink {
+    height: 45px;
+    width: 80%;
+    background: black;
+    border-radius: 3px;
+    display: flex;
+    align-items: center;
+    margin: 1px 0 4px 7px;
+    transition: 0.2s ease-in-out;
+}
+.rnav .lall .nlink:hover {
+    background: rgba(0, 162, 255, 0.1);
+    border-radius: 10px;
+    cursor: pointer;
+}
+.rnav .lall .nlink > a {
+    color: white; text-decoration: none;
+    font-family: "Nunito";
+    margin: 4px 0 0 0;
+    cursor: pointer;
+}
+.rnav .lall .nlink > svg {
+    height: 20px;
+    width: auto;
+    margin: 0 5px 0 10px;
+}
+.rnav .lall .grt {
+    font-family: "Nunito";
+    font-weight: 1000;
+    margin: 0 0 25px 5px;
+}
+.bothnavs .leftmod {
+    height: 100vh;
+    width: 300px;
+    background: white;
+    border-right: 1px solid lightgrey;
+    border-top: 1px solid lightgrey;
+    display: flex;
+    justify-content: center;
+}
+.bothnavs .leftmod .lall {
+    height: 82vh;
+    width: 88%;
+    border: 2px solid white;
+    border-radius: 5px;
+    margin: 75px 0 0 0;
+}
+.bothnavs .leftmod .lall .ltr {
+    background: transparent;
+    height: 22px;
+    width: 89%;
+    margin: 5px 0 0 5px;
+    display: flex;
+    align-items: center;
+    border-radius: 10px;
+}
+.bothnavs .leftmod .lall .ltr > p {
+    font-family: "Nunito";
+    margin: 0 0 0 15px;
+    font-weight: bold;
+}
+.bothnavs .leftmod .lall .rdh {
+    background: transparent;
+    height: 22px;
+    width: 240px;
+    margin: 5px 0 0 20px;
+    display: flex;
+    align-items: center;
+    border-radius: 10px;
+}
+.bothnavs .leftmod .lall .rdh input[type="radio"] {
+    color: black;
+    margin: 0 3px 0 0px;
+    cursor: pointer;
+}
+.bothnavs .leftmod .lall .rdh > label {
+    font-family: "Nunito";
+    font-weight: bold;
+    margin: 3px 10px 0 0;
+}
+.bothnavs .leftmod .lall .rdh > input[type="range"]::-webkit-slider-runnable-track {
+    background: rgba(0, 162, 225, 0.1);
+    height: 3px;
+    border-radius: 3px;
+    margin: 0 0 0 0;
+}
+.bothnavs .leftmod .lall .rdh > input[type="range"]::-webkit-slider-thumb {
+    background: gold; appearance: none;
+    margin: -7px 0 0 0;
+    border:;
+    outline: 3px solid white;
+    cursor: pointer;
+}
+.bothnavs .leftmod .lall .pchange {
+    height: 43px;
+    width: 240px;
+    background: transparent;
+    border-radius:3px;
+    margin: 23px 0 0 12px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: 3px solid white;
+    outline: 2px solid transparent;
+}
+.bothnavs .leftmod .lall .pchange > sup {
+    font-family: "Nunito";
+    font-weight: bold;
+    margin: 0 -28px 0 8px;
+}
+.bothnavs .leftmod .lall .pchange .pinput {
+    max-width: 86px;
+    height: 30px;
+    border-radius: 0.50px;
+    border: 2px solid transparent;
+    margin: 0 0 0 12px;
+    font-family: "Nunito";
+    font-weight: bold;
+    outline: none;
+}
+.bothnavs .leftmod .lall .pchange::after {
+    position: absolute;
+    margin: -59px 0 0 6px;
+    content: "From €(Cheapest)";
+    font-family: "Nunito";
+    font-size: small;
+    height: 18px;
+    width: auto;
+    background: grey;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-right: 5px;
+    padding-left: 5px;
+    color: white;
+    border-radius: 2px;
+}
+
+.bothnavs .leftmod .lall .pchange::before {
+    position: absolute;
+    margin: -59px 0 0 43%;
+    content: "To €(Expensive)";
+    font-family: "Nunito";
+    font-size: small;
+    height: 18px;
+    width: auto;
+    background:grey;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-right: 5px;
+    padding-left: 5px;
+    color: white;
+    border-radius: 2px;
+}
+.bothnavs .leftmod .lall .pchange .pinput::placeholder {
+    margin: 0 0 0 5px;
+    font-family: "Nunito";
+}
+.bothnavs .leftmod .lall .pchange .dash {
+    color: lightgrey;
+}
+/* property sqft */
+
+.bothnavs .leftmod .lall .demarc {
+    height: 1px;
+    width: 80%;
+    border-radius: 5px;
+    background: lightgrey;
+    margin: 22px 0 10px 20px;
+}
+.bothnavs .leftmod .lall .dchange {
+    height: 43px;
+    width: 240px;
+    background: transparent;
+    border-radius:3px;
+    margin: -10px 0 0 12px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    border: 3px solid white;
+    outline: 2px solid transparent;
+}
+.bothnavs .leftmod .lall .dchange > sup {
+    font-family: "Nunito";
+    font-weight: bold;
+    color: grey;
+    margin: 0 0px 0 8px;
+}
+.bothnavs .leftmod .lall .dchange .dinput {
+    max-width: 86px;
+    height: 30px;
+    border-radius: 0.50px;
+    border: 2px solid transparent;
+    font-family: "Nunito";
+    font-weight: bold;
+    outline: none;
+}
+.bothnavs .leftmod .lall .ddh {
+    background: transparent;
+    height: 22px;
+    width: 240px;
+    margin: 5px 0 0 20px;
+    display: flex;
+    align-items: center;
+    border-radius: 10px;
+}
+
+
+.bothnavs .leftmod .lall .ddh > input[type="range"]::-webkit-slider-runnable-track {
+    background: rgba(0, 162, 225, 0.1);
+    height: 3px;
+    border-radius: 3px;
+    margin: 0 0 0 0;
+}
+.bothnavs .leftmod .lall .ddh > input[type="range"]::-webkit-slider-thumb {
+    background: gold; appearance: none;
+    margin: -7px 0 0 0;
+    border:;
+    outline: 3px solid white;
+    cursor: pointer;
+}
+
+/* Proprty sqft end */
+
+/* Ammenity */
+.bothnavs .leftmod .lall .mhd {
+    height: 50px;
+    width: 80%;
+    background: white;
+    border-radius: 2px;
+    margin: 5px 0 0 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.bothnavs .leftmod .lall .mhd .th {
+    height: 30px;
+    width: 80px;
+    border: 2px solid black;
+    border-radius: 2px;
+    display: flex;
+    align-items: center;
+    margin: 0;
+}
+.bothnavs .leftmod .lall .mhd .bh {
+    height: 30px;
+    width: 80px;
+    border: 2px solid black;
+    border-radius: 2px;
+    display: flex;
+    align-items: center;
+    margin: 0;
+}
+.bothnavs .leftmod .lall .mhd .th::after {
+    content: "Bath";
+    padding-left: 5px;
+    padding-right: 5px;
+    font-size: small;
+    font-family: "Nunito";
+    background: white;
+    border-radius: 2px;
+    margin: -40px 0 0 -68px;
+    padding-bottom: 0;
+}
+.bothnavs .leftmod .lall .mhd .bh::after {
+    content: "Beds";
+    font-size: small;
+    font-family: "Nunito";
+    background: white;
+    border-radius: 2px;
+    margin: -40px 0 0 -68px;
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-bottom: 0;
+}
+
+.bothnavs .leftmod .lall .mhd .th .round {
+    max-height: 18px;
+    min-width: 18px;
+    border: 2px solid black;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "Nunito";
+    font-size: small;
+    font-weight: bold;
+    color: black;
+    margin: 0 0 0 4px;
+    cursor: pointer;
+}
+.bothnavs .leftmod .lall .mhd .bh .round {
+    max-height: 18px;
+    min-width: 18px;
+    border: 2px solid black;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "Nunito";
+    font-size: small;
+    font-weight: bold;
+    color: black;
+    margin: 0 0 0 4px;
+    cursor: pointer;
+}
+.bothnavs .leftmod .lall .mhd .th .hid {
+    color: transparent;
+}
+.bothnavs .leftmod .lall .mhd .bh .hid {
+    color: transparent;
+}
+.bothnavs .leftmod .lall .mhd .th .round:hover {
+    transform: scale(0.97)
+}
+.bothnavs .leftmod .lall .mhd .bh .round:hover {
+    transform: scale(0.97)
+}
+.bothnavs .leftmod .lall .mhd .th > p {
+    font-family: "Nunito";
+    font-size: small;
+    font-weight: bold;
+}
+.bothnavs .leftmod .lall .mhd .bh > p {
+    font-family: "Nunito";
+    font-size: small;
+    font-weight: bold;
+}
+/* Ammenity end */
+
+/*  Button Apply filter */
+.bothnavs .leftmod .lall .ab {
+    height: 45px;
+    width: 120px;
+    background: black;
+    border: 1px solid white;
+    border-radius: 3px;
+    margin:10% 0 0 25%;
+    cursor: pointer;
+    color: white;
+    font-family: "Nunito";
+    transition: 0.2s ease-in-out;
+}
+.bothnavs .leftmod .lall .ab:hover {
+    outline: 2px solid black;
+}
+/*  Button Apply filter end */
+.th {
+    height: 80px;
+    width: 80%;
+    border: 1px solid grey;
+    margin: 25px;
+}
+.homedisplay {
+    height: auto;/* later will be auto height */
+    min-width: 74%;
+    border: 2px solid mediumslateblue;
+    border-radius: 5px;
+    margin: 0 20px 0 auto;
+}
+.homedisplay .tsp {
+    height: 30px;
+    width: 90%;
+    border: 1px solid transparent;
+    margin: 70px 0 0 10px;
+}
+.tsph3 {
+    color: black;
+    height: auto;
+    min-height: 30px;
+    width: auto;
+    max-width: 95%;
+    background: rgba(0, 122, 255, 0.1);
+    padding-top: 5px;
+    padding-left: 5px;
+    padding-right: 4px;
+    border-radius: 3px;
+    margin: 0 0 20px -2px;
+    font-family: "Nunito";
+    border:3px solid white;
+    border-radius: 3px;
+    cursor: pointer;
+    outline: 2px solid #5ec1e6;
+}
+.tsph3:hover {
+    outline: 2px solid #5ec1e9;
+}
+.tspsp {
+    color: gray;
+    font-size: medium;
+}
+.tspg {
+    color: #5ce1e6;
+    font-size: medium;
+}
+.homedisplay .cmain {
+    text-decoration: none;
+    color: black;
+    height: auto;
+    width: 280px;
+    border: 3px solid white;
+    border-radius: 5px;
+    display: inline-block;
+    flex-direction: column;
+    align-items: center;
+    background: white;
+    cursor: pointer;
+    transition: border 0.1s;
+    margin: 28px 5px 0 10px;
+    transition: 0.2s all ease;
+}
+.homedisplay .cmain:hover {
+    outline: 2px solid mediumslateblue;
+}
+.homedisplay .cmain .cho {
+    z-index: 4;
+    height: auto;
+    width: 278px;
+    display: inline-block;
+    cursor: pointer;
+    border-top: none;
+    border-right: 0.70px solid lightgrey;
+    border-bottom: 0.70px solid lightgrey;
+    border-left: 0.70px solid lightgrey;
+    margin: 0 0 0 0px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+.homedisplay .cmain .cho:hover {
+}
+.homedisplay .cmain .iside {
+    height: 248px;
+    width: 100%;
+    border: none;
+    border-radius: 3px;
+    display: flex;
+}
+.homedisplay .cmain .iside .swiper {
+    height: 100%;
+    width: 100%;
+    border-top-left-radius: 5px;
+    border-top-left-radius: 5px;
+    z-index: 0;
+}
+.homedisplay .cmain .iside .swiper .swiper-wrapper .swiper-slide { /* image slide image */
+    height: auto;
+    width: 100%;
+    object-fit: cover;
+    border-top-right-radius: 5px;
+}
+.homedisplay .cmain .cho .nap {
+    z-index: 1;
+    height: 18px;
+    width: 95%;
+    border: 1px solid transparent;
+    border-radius: 3px;
+    margin: 15px 0 0 3px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+}
+.homedisplay .cmain .cho .nap > p {
+    font-family: "Nunito";
+    font-size: small;
+    font-weight: bold;
+}
+.homedisplay .cmain .cho .nap .pr {
+    font-family: "Nunito", Arial;
+    font-weight: bold;
+    color:rgb(0, 162, 255);
+}
+.homedisplay .cmain .cho .nap .mow {
+    font-family: "Nunito", Arial;
+    font-weight: bold;
+    color:rgb(23, 240, 186);
+    font-size: 11px;
+}
+.homedisplay .cmain .cho .lab {
+    height: 16px;
+    width: 95%;
+    border: 1px solid transparent;
+    border-radius: 3px;
+    margin: 3px 0 0 3px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+}
+.homedisplay .cmain .cho .lab > p {
+    font-family: "Nunito";
+    font-size: small;
+    font-weight: bold;
+    color: rgb(23, 240, 186);
+}
+.homedisplay .cmain .cho .lab .bei {
+    height: 10px;
+    width: auto;
+}
+.homedisplay .cmain .cho .d {
+    height: 15px;
+    width: 95%;
+    border: 1px solid transparent;
+    border-radius: 3px;
+    margin: 3px 0 0 3px;
+}
+.homedisplay .cmain .cho .d > p {
+    font-family: "Nunito";
+    font-size: 11px;
+}
+.homedisplay .cmain .cho .aas {
+    height: 35px;
+    width: 95%;
+    border: 1px solid transparent;
+    border-radius: 3px;
+    margin: -7px 0 0 -2px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+}
+.homedisplay .cmain .cho .aas .am:first-child {
+    margin: 0 0 0 5px;
+}
+.homedisplay .cmain .cho .aas .am {
+    height: 25px;
+    width: auto;
+    border: 1px solid transparent;
+    display: flex;
+    align-items: center;
+}
+.homedisplay .cmain .cho .aas .am > p {
+    font-family: "Nunito";
+    font-size: 10px;
+    margin: 0 0 0 3px;
+}
+.homedisplay .cmain .cho .aas .am > svg {
+    height: 11px;
+    width: auto;
+}
+.homedisplay .cmain .cho .aas .dmrc {
+    height: 13px;
+    width: 1.20px;
+    background: gray;
+    border-radius: 2px;
+    margin: 0 4px 0 4px;
+}
+.homedisplay .cmain .cho .us {
+    height: 30px;
+    width: 95%;
+    border: 1px solid transparent;
+    display: flex;
+    flex-direction: column;
+    margin: 10px 0 5px 3px;
+}
+.homedisplay .cmain .cho .us .usd {
+    font-family: "Nunito";
+    font-size: 10px;
+    margin: 0 0 0 3px;
+    color: gray;
+}
+.homedisplay .cmain .cho .us .ush {
+    height: 18px;
+    width: 80%;
+    border: 1px solid transparent;
+    display: flex;
+    align-items: center;
+}
+.homedisplay .cmain .cho .ush > p {
+    font-family: "Nunito";
+    font-size: 11px;
+    font-weight: bold;
+    color: /*rgb(0, 162, 255);*/ black;
+    margin: -0.05px 0 0 0;
+}
+.homedisplay .cmain .cho .ush > svg {
+    height: 10px;
+    width: auto;
+    margin: 0 0 0 3px;
+}
+
+
+
+/* 
+Range slider css 
+*/
+@media screen and (max-width: 1600px) {
+    .homedisplay {
+        width: 70%;
+    }
+    header .a .rightside .ptype {
+        display: none;
+    }
+}
+@media screen and (max-width: 990px) {
+    header .a .rightside .addbutton {
+        display: none;
+    }
+    header .a .rightside {
+        width: auto;
+    }
+}
+@media screen and (max-width: 700px) {
+    header .a .rightside .ptype {
+        display: none;
+    }
+}
+@media screen and (max-width: 640px) {
+    header .a .rightside .profile {
+        display: none;
+    }
+    header .a .rightside .men {
+        transform: scale(0.80);
+        margin: -2px -15px 0 0;
+    }
+    .bothnavs .leftmod {
+        display: none;
+    }
+    .homedisplay {
+        width: 98%;
+        justify-content: center;
+    }
+    .homedisplay .cmain {
+        width: 330px;
+        height: auto;
+        margin: 48px 0 0 9px;
+    }
+    .homedisplay .cmain .cho {
+        width: 329px;
+    }
+    .bothnavs {
+        width: 0;
+        height: 0;
+    }
+    .tsph3 {
+        width: auto;
+        max-width: 97%;
+        margin: 0 0 10px 3px;
+    }
+    .homedisplay .cmain .iside .swiper {
+        z-index: 1;
+    }
+}

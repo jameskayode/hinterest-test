@@ -1,0 +1,841 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="theme-color" content="#5ce1e6" />
+<meta name="viewport" content= "width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<link rel="icon" type="image/png" href="./images/fuscafavicon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Liter&display=swap" rel="stylesheet">    
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Signika+Negative:wght@300..700&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Niramit:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css"></style>
+<link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+/>
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<title>fusca - properties for sale</title>
+</head>
+  <body>
+  	<header>
+  		<section class="a">
+  			<img class="logoside" src="images/logoo.png">
+  			<section class="rightside">
+  				<div class="ptype" id="dt">
+  					<svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M5 9.77746V16.2C5 17.8802 5 18.7203 5.32698 19.362C5.6146 19.9265 6.07354 20.3854 6.63803 20.673C7.27976 21 8.11984 21 9.8 21H14.2C15.8802 21 16.7202 21 17.362 20.673C17.9265 20.3854 18.3854 19.9265 18.673 19.362C19 18.7203 19 17.8802 19 16.2V5.00002M21 12L15.5668 5.96399C14.3311 4.59122 13.7133 3.90484 12.9856 3.65144C12.3466 3.42888 11.651 3.42893 11.0119 3.65159C10.2843 3.90509 9.66661 4.59157 8.43114 5.96452L3 12M14 21V15H10V21" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path> </g></svg>
+  					<p>Categories</p>
+  					<svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="nomargin"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M19.9201 8.94995L13.4001 15.47C12.6301 16.24 11.3701 16.24 10.6001 15.47L4.08008 8.94995" stroke="#292D32" stroke-width="2.4" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"></path> </g></svg>
+  				</div>
+  				<button class="addbutton">
+  				 <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" stroke="#ffffff"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M6 12H18M12 6V18" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path> </g></svg>
+  				 <p>Add Property</p>
+  			    </button>
+  				<!-- profile sect -->
+  				<section class="profile">
+  					<div class="notifications">
+  					<svg fill="#000000" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"><path d="m13.58 11.6-1.33-2.18V6.33A4.36 4.36 0 0 0 10 2.26a2.45 2.45 0 0 0 0-.38A1.94 1.94 0 0 0 8 0a1.94 1.94 0 0 0-2 1.88 1.64 1.64 0 0 0 0 .38 4.36 4.36 0 0 0-2.25 4.07v3.09L2.42 11.6a1.25 1.25 0 0 0 1.06 1.9h1.77A2.68 2.68 0 0 0 8 16a2.68 2.68 0 0 0 2.75-2.5h1.77a1.25 1.25 0 0 0 1.06-1.9zM7.25 1.88A.7.7 0 0 1 8 1.25a.7.7 0 0 1 .75.63 6 6 0 0 0-.75 0 5.9 5.9 0 0 0-.75 0zM8 14.75a1.44 1.44 0 0 1-1.5-1.25h3A1.44 1.44 0 0 1 8 14.75zm-4.52-2.5 1.34-2.17.18-.31V6.33a4 4 0 0 1 .6-2.12A2.68 2.68 0 0 1 8 3.12a2.68 2.68 0 0 1 2.4 1.09 4 4 0 0 1 .6 2.12v3.44l.18.31 1.34 2.17z"></path></g></svg>
+  				    </div>
+  					<div class="pdetail">
+  						<p class="pname">Marfica Gerad</p>
+  						<p class="pspec">Customer</p>
+  					</div>
+  					<div class="outliner"></div>
+  				</section>
+  				<!-- profile sect end -->
+  				<div class="men" id="men">
+  					<div class="lines"></div>
+  					<div class="lines"></div>
+  					<div class="lines"></div>
+  				</div>
+  			</section>
+  		</section>
+  	</header>
+  	<div class="drop" id="drop"></div>
+  	<div class="bothnavs" id="bn">
+  		<div class="leftmod" id="lm">
+  			<section class="lall">
+         <div class="ltr"><p>Looking to?</p></div>   
+         <div class="rdh">
+          <input type="radio" name="buy" value="buy" class="br" checked> <label for="buy"> Buy </label>
+          <input type="radio" name="buy" value="rent"> <label for="buy"> Rent </label>
+         </div>
+
+         <div class="demarc"></div>
+
+         <br>
+         <div class="ltr"><p>Property Price <span class="tspg">(adjustable)</span></p></div>   
+         <div class="rdh">
+          <input type="range" name="price" min="100000" max="1000000" onchange="console.log(this.value)" value="" class="r1" id="range1"> <label for="price">  </label>
+         </div>
+         <div class="pchange">
+           <sup>€</sup>
+           <input type="number" name="" value="100000" placeholder="from" class="pinput">
+            <p class="dash"></p>
+            <sup>€</sup>
+           <input type="number" name="" value="1000000" placeholder="to" class="pinput" id="i1">
+         </div>
+
+         <div class="demarc"></div>
+
+         <!-- Propert Sqft mod -->
+         <div class="ltr"><p>Property Size <span class="tspg">(adjustable)</span></p></div>
+         <div class="ddh">
+          <input type="range" name="sqft" min="100" max="1000000" onchange="console.log(this.value)" value="" class="s1" id="s1"> <label for="price">  </label>
+         </div>
+         <div class="dchange">
+           <sup>(Sqft)</sup>
+           <input type="number" name="" value="1000" placeholder="from" class="dinput" id="d1">
+         </div>
+
+
+         <div class="demarc"></div>
+         <!-- ammenity mod -->
+         <div class="ltr"><p>Ammenities <span class="tspg">(adjustable)</span></p></div>
+         <div class="mhd">
+           <div class="th">
+             <div class="round" id="1m1" onclick="dcrs()">-</div>
+              <p class="hid">0</p>
+              <p id="ch1">1</p>
+              <p class="hid">0</p>
+             <div class="round" id="1p1" onclick="incrs()">+</div>
+           </div>
+           <div class="bh">
+             <div class="round" id="2m1" onclick="dicrs()">-</div>
+             <p class="hid">0</p>
+              <p id="ch2">2</p>
+              <p class="hid">0</p>
+             <div class="round" id="2p1" onclick="hincrs()">+</div>
+           </div>
+         </div>
+         <button class="ab">Apply Filter</button>
+        </section> <!-- lall section end -->
+  		</div>
+  	  
+  	</div>
+    <!-- Floating nav out of bothnav -->
+    <div class="rnav" id="rnav">
+        <section class="lall" id="lall">
+          <h2 class="grt"></h2>
+          <div class="nlink"><svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M7.37087 7.99982C8.36197 6.47544 9.34354 4.90951 9.95605 3.37694C10.2157 2.72714 11.0161 2.42181 11.5727 2.84585C14.9439 5.41391 20 10.3781 20 15C20 16.1736 19.8008 17.1655 19.4698 17.9998M5.46561 10.9998C4.61333 12.4537 4 13.8131 4 15C4 18.1069 6.24558 20.3088 8.08142 21.3715C8.50204 21.615 8.91147 21.1071 8.69077 20.6741C8.20479 19.7206 7.73333 18.4893 7.73333 17.5C7.73333 16.1286 8.77825 15.0265 9.52461 14.3198C9.71604 14.1386 10.016 14.1414 10.182 14.3462C10.4901 14.7265 10.7982 15.2079 11.1063 15.5975C11.2872 15.8262 11.6241 15.806 11.7828 15.5614C12.7689 14.0418 12.9976 12.1029 13.0507 10.6537C13.0667 10.2163 13.5786 10.0014 13.8721 10.3261C15.1559 11.7465 16.8 14.0494 16.8 16C16.8 17.8159 15.7823 19.7462 14.9019 21.0115C14.6438 21.3823 14.9274 21.8853 15.3588 21.751C15.8734 21.5909 16.4265 21.3507 16.9653 21.0115" stroke="#ffffff" stroke-width="1.5" stroke-linecap="round"></path> </g></svg><a href="/homes">Home</a></div>
+          <div class="nlink"><svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M12.75 10.9998C12.75 10.5856 12.4142 10.2498 12 10.2498C11.5858 10.2498 11.25 10.5856 11.25 10.9998L11.25 13.2498H9C8.58579 13.2498 8.25 13.5856 8.25 13.9998C8.25 14.414 8.58579 14.7498 9 14.7498H11.25V16.9998C11.25 17.414 11.5858 17.7498 12 17.7498C12.4142 17.7498 12.75 17.414 12.75 16.9998L12.75 14.7498H15C15.4142 14.7498 15.75 14.414 15.75 13.9998C15.75 13.5856 15.4142 13.2498 15 13.2498H12.75V10.9998Z" fill="#ffffff"></path> <path fill-rule="evenodd" clip-rule="evenodd" d="M12 1.25C11.2919 1.25 10.6485 1.45282 9.95055 1.79224C9.27585 2.12035 8.49642 2.60409 7.52286 3.20832L5.45628 4.4909C4.53509 5.06261 3.79744 5.5204 3.2289 5.95581C2.64015 6.40669 2.18795 6.86589 1.86131 7.46263C1.53535 8.05812 1.38857 8.69174 1.31819 9.4407C1.24999 10.1665 1.24999 11.0541 1.25 12.1672V13.7799C1.24999 15.6837 1.24998 17.1866 1.4027 18.3616C1.55937 19.567 1.88856 20.5401 2.63236 21.3094C3.37958 22.0824 4.33046 22.4277 5.50761 22.5914C6.64849 22.75 8.10556 22.75 9.94185 22.75H14.0581C15.8944 22.75 17.3515 22.75 18.4924 22.5914C19.6695 22.4277 20.6204 22.0824 21.3676 21.3094C22.1114 20.5401 22.4406 19.567 22.5973 18.3616C22.75 17.1866 22.75 15.6838 22.75 13.7799V12.1672C22.75 11.0541 22.75 10.1665 22.6818 9.4407C22.6114 8.69174 22.4646 8.05812 22.1387 7.46263C21.8121 6.86589 21.3599 6.40669 20.7711 5.95581C20.2026 5.5204 19.4649 5.06262 18.5437 4.49091L16.4771 3.20831C15.5036 2.60409 14.7241 2.12034 14.0494 1.79224C13.3515 1.45282 12.7081 1.25 12 1.25ZM8.27953 4.50412C9.29529 3.87371 10.0095 3.43153 10.6065 3.1412C11.1882 2.85833 11.6002 2.75 12 2.75C12.3998 2.75 12.8118 2.85833 13.3935 3.14119C13.9905 3.43153 14.7047 3.87371 15.7205 4.50412L17.7205 5.74537C18.6813 6.34169 19.3559 6.76135 19.8591 7.1467C20.3487 7.52164 20.6303 7.83106 20.8229 8.18285C21.0162 8.53589 21.129 8.94865 21.1884 9.58104C21.2492 10.2286 21.25 11.0458 21.25 12.2039V13.725C21.25 15.6959 21.2485 17.1012 21.1098 18.1683C20.9736 19.2163 20.717 19.8244 20.2892 20.2669C19.8649 20.7058 19.2871 20.9664 18.2858 21.1057C17.2602 21.2483 15.9075 21.25 14 21.25H10C8.09247 21.25 6.73983 21.2483 5.71422 21.1057C4.71286 20.9664 4.13514 20.7058 3.71079 20.2669C3.28301 19.8244 3.02642 19.2163 2.89019 18.1683C2.75149 17.1012 2.75 15.6959 2.75 13.725V12.2039C2.75 11.0458 2.75076 10.2286 2.81161 9.58104C2.87103 8.94865 2.98385 8.53589 3.17709 8.18285C3.36965 7.83106 3.65133 7.52164 4.14092 7.1467C4.6441 6.76135 5.31869 6.34169 6.27953 5.74537L8.27953 4.50412Z" fill="#ffffff"></path> </g></svg><a href="/upload">Upload Property</a></div>
+          <div class="nlink"><svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M16.5 9.5L12.3 13.7L10.7 11.3L7.5 14.5" stroke="#ffffff" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path> <path d="M14.5 9.5H16.5V11.5" stroke="#ffffff" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path> <path d="M9 22H15C20 22 22 20 22 15V9C22 4 20 2 15 2H9C4 2 2 4 2 9V15C2 20 4 22 9 22Z" stroke="#ffffff" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path> </g></svg><a href="/trending">Top properties</a></div>
+          <div class="nlink"><svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M7.0498 7.0498H7.0598M10.5118 3H7.8C6.11984 3 5.27976 3 4.63803 3.32698C4.07354 3.6146 3.6146 4.07354 3.32698 4.63803C3 5.27976 3 6.11984 3 7.8V10.5118C3 11.2455 3 11.6124 3.08289 11.9577C3.15638 12.2638 3.27759 12.5564 3.44208 12.8249C3.6276 13.1276 3.88703 13.387 4.40589 13.9059L9.10589 18.6059C10.2939 19.7939 10.888 20.388 11.5729 20.6105C12.1755 20.8063 12.8245 20.8063 13.4271 20.6105C14.112 20.388 14.7061 19.7939 15.8941 18.6059L18.6059 15.8941C19.7939 14.7061 20.388 14.112 20.6105 13.4271C20.8063 12.8245 20.8063 12.1755 20.6105 11.5729C20.388 10.888 19.7939 10.2939 18.6059 9.10589L13.9059 4.40589C13.387 3.88703 13.1276 3.6276 12.8249 3.44208C12.5564 3.27759 12.2638 3.15638 11.9577 3.08289C11.6124 3 11.2455 3 10.5118 3ZM7.5498 7.0498C7.5498 7.32595 7.32595 7.5498 7.0498 7.5498C6.77366 7.5498 6.5498 7.32595 6.5498 7.0498C6.5498 6.77366 6.77366 6.5498 7.0498 6.5498C7.32595 6.5498 7.5498 6.77366 7.5498 7.0498Z" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path> </g></svg><a href="/boost">Promotions</a></div>
+          <div class="nlink"><svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M21 16.0909V11.0975C21 6.80891 21 4.6646 19.682 3.3323C18.364 2 16.2426 2 12 2C7.75736 2 5.63604 2 4.31802 3.3323C3 4.6646 3 6.80891 3 11.0975V16.0909C3 19.1875 3 20.7358 3.73411 21.4123C4.08421 21.735 4.52615 21.9377 4.99692 21.9915C5.98402 22.1045 7.13673 21.0849 9.44216 19.0458C10.4612 18.1445 10.9708 17.6938 11.5603 17.5751C11.8506 17.5166 12.1494 17.5166 12.4397 17.5751C13.0292 17.6938 13.5388 18.1445 14.5578 19.0458C16.8633 21.0849 18.016 22.1045 19.0031 21.9915C19.4739 21.9377 19.9158 21.735 20.2659 21.4123C21 20.7358 21 19.1875 21 16.0909Z" stroke="#ffffff" stroke-width="1.5"></path> <path opacity="0.5" d="M15 6H9" stroke="#ffffff" stroke-width="1.5" stroke-linecap="round"></path> </g></svg><a href="/saved">Saved Properties</a></div>
+          <div class="nlink"><svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M15 19.4001L16.7143 21.0001L21 17.0001M12 12.0001V16.0001M14 14.0001H10M5 9.77753V16.2001C5 17.8802 5 18.7203 5.32698 19.362C5.6146 19.9265 6.07354 20.3855 6.63803 20.6731C7.27976 21.0001 8.11984 21.0001 9.8 21.0001H11M21 12.0001L15.5668 5.96405C14.3311 4.59129 13.7133 3.9049 12.9856 3.65151C12.3466 3.42894 11.651 3.42899 11.0119 3.65165C10.2843 3.90516 9.66661 4.59163 8.43114 5.96458L3 12.0001" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path> </g></svg><a href="/agents">Agents</a></div>
+          <div class="nlink"><svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M15 19.4001L16.7143 21.0001L21 17.0001M12 12.0001V16.0001M14 14.0001H10M5 9.77753V16.2001C5 17.8802 5 18.7203 5.32698 19.362C5.6146 19.9265 6.07354 20.3855 6.63803 20.6731C7.27976 21.0001 8.11984 21.0001 9.8 21.0001H11M21 12.0001L15.5668 5.96405C14.3311 4.59129 13.7133 3.9049 12.9856 3.65151C12.3466 3.42894 11.651 3.42899 11.0119 3.65165C10.2843 3.90516 9.66661 4.59163 8.43114 5.96458L3 12.0001" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path> </g></svg><a href="/companies">Companies</a></div>
+          <div class="nlink"><svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" stroke="#ffffff"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M5 9.77746V16.2C5 17.8802 5 18.7203 5.32698 19.362C5.6146 19.9265 6.07354 20.3854 6.63803 20.673C7.27976 21 8.11984 21 9.8 21H14.2C15.8802 21 16.7202 21 17.362 20.673C17.9265 20.3854 18.3854 19.9265 18.673 19.362C19 18.7203 19 17.8802 19 16.2V5.00002M21 12L15.5668 5.96399C14.3311 4.59122 13.7133 3.90484 12.9856 3.65144C12.3466 3.42888 11.651 3.42893 11.0119 3.65159C10.2843 3.90509 9.66661 4.59157 8.43114 5.96452L3 12M14 21V15H10V21" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path> </g></svg><a href="/categories/commercial">Commercial</a></div>
+          <div class="nlink"><svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" stroke="#ffffff"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M5 9.77746V16.2C5 17.8802 5 18.7203 5.32698 19.362C5.6146 19.9265 6.07354 20.3854 6.63803 20.673C7.27976 21 8.11984 21 9.8 21H14.2C15.8802 21 16.7202 21 17.362 20.673C17.9265 20.3854 18.3854 19.9265 18.673 19.362C19 18.7203 19 17.8802 19 16.2V5.00002M21 12L15.5668 5.96399C14.3311 4.59122 13.7133 3.90484 12.9856 3.65144C12.3466 3.42888 11.651 3.42893 11.0119 3.65159C10.2843 3.90509 9.66661 4.59157 8.43114 5.96452L3 12M14 21V15H10V21" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path> </g></svg><a href="/categories/residential">Residential</a></div>
+          <div class="nlink"><svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" stroke="#ffffff"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M5 9.77746V16.2C5 17.8802 5 18.7203 5.32698 19.362C5.6146 19.9265 6.07354 20.3854 6.63803 20.673C7.27976 21 8.11984 21 9.8 21H14.2C15.8802 21 16.7202 21 17.362 20.673C17.9265 20.3854 18.3854 19.9265 18.673 19.362C19 18.7203 19 17.8802 19 16.2V5.00002M21 12L15.5668 5.96399C14.3311 4.59122 13.7133 3.90484 12.9856 3.65144C12.3466 3.42888 11.651 3.42893 11.0119 3.65159C10.2843 3.90509 9.66661 4.59157 8.43114 5.96452L3 12M14 21V15H10V21" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path> </g></svg><a href="/categories/retail">Retail</a></div>
+          <div class="nlink"><svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" stroke="#ffffff"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M5 9.77746V16.2C5 17.8802 5 18.7203 5.32698 19.362C5.6146 19.9265 6.07354 20.3854 6.63803 20.673C7.27976 21 8.11984 21 9.8 21H14.2C15.8802 21 16.7202 21 17.362 20.673C17.9265 20.3854 18.3854 19.9265 18.673 19.362C19 18.7203 19 17.8802 19 16.2V5.00002M21 12L15.5668 5.96399C14.3311 4.59122 13.7133 3.90484 12.9856 3.65144C12.3466 3.42888 11.651 3.42893 11.0119 3.65159C10.2843 3.90509 9.66661 4.59157 8.43114 5.96452L3 12M14 21V15H10V21" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path> </g></svg><a href="/categories">All Categories</a></div>
+        </section>
+      </div>
+  	<!-- Home display after header -->
+  	<section class="homedisplay" id="hd">
+      <div class="tsp">
+        <h3 class="tsph3"><span class="tspg">523 </span>Properties in <span class="tspsp">Galway, County Galway</span>.</h3>
+      </div>
+      <!-- Card Here -->
+      <a class="cmain" href="./comingsoon.html">
+        <section class="iside"><div class="swiper" id="swp">
+           <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+              <!-- Slides -->
+              <img class="swiper-slide" src="images/house1.jpg">
+              <img class="swiper-slide" src="images/hoouse3.webp">
+              <img class="swiper-slide" src="images/house2.jpg">
+              <img class="swiper-slide" src="images/house4.jpg">
+              <img class="swiper-slide" src="images/house5.jpg">
+              <img class="swiper-slide" src="images/house6.jpg">
+              <img class="swiper-slide" src="images/house7.jpg">
+           </div>
+            <!-- If we need pagination -->
+            <div class="swiper-pagination"></div>
+            <!-- If we need navigation buttons -->
+           <div class="swiper-scrollbar"></div>
+           </div>
+         </section> <!-- img goes in here -->
+            <section class="cho">
+        <section class="nap"><p>New family home</p> <p><span class="pr">€1788</span><span class="mow">/Month</span></p></section>
+        <section class="lab"><p>Galway, County Galway</p><img src="images/berr.png" class="bei"></section>
+        <section class="d"><p>Cost efficient big home with 8 beds..</p></section>
+        <section class="aas"><div class="am"><svg fill="#000000" viewBox="0 0 50 50" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"><path d="M25 0C17.28125 0 11 7.625 11 17C11 19.980469 11.632813 22.820313 12.84375 25.375C13.167969 25.144531 13.574219 25 14 25L17 25C18.101563 25 19 25.898438 19 27L25 27C21.132813 27 18 22.523438 18 17C18 11.476563 21.132813 7 25 7C28.867188 7 32 11.476563 32 17C32 22.523438 28.867188 27 25 27L31 27C31 25.898438 31.898438 25 33 25L36 25C36.425781 25 36.832031 25.144531 37.15625 25.375C38.367188 22.820313 39 19.980469 39 17C39 7.625 32.71875 0 25 0 Z M 14 26C13.449219 26 13 26.445313 13 27L18 27C18 26.445313 17.550781 26 17 26 Z M 33 26C32.445313 26 32 26.445313 32 27L37 27C37 26.445313 36.554688 26 36 26 Z M 11 28C9.347656 28 8 29.347656 8 31C8 32.652344 9.347656 34 11 34L39 34C40.652344 34 42 32.652344 42 31C42 29.347656 40.652344 28 39 28 Z M 10.03125 34.875C10.476563 40.53125 15.230469 45 21 45L29 45C34.769531 45 39.523438 40.53125 39.96875 34.875C39.660156 34.949219 39.332031 35 39 35L11 35C10.667969 35 10.339844 34.949219 10.03125 34.875 Z M 15.9375 44.875C15.429688 45.789063 15 47.113281 15 49C15 49.554688 15.449219 50 16 50L34 50C34.007813 50 34.027344 50 34.03125 50C34.585938 50 35.03125 49.554688 35.03125 49C35.03125 48.929688 35.015625 48.847656 35 48.78125C34.96875 47.003906 34.550781 45.757813 34.0625 44.875C32.523438 45.59375 30.808594 46 29 46L21 46C19.191406 46 17.476563 45.59375 15.9375 44.875Z"></path></g></svg><p class="ams">4 Toilets</p></div><div class="dmrc"></div><!-- bed --><div class="am"><svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path fill-rule="evenodd" clip-rule="evenodd" d="M3 4C3 3.44772 2.55228 3 2 3C1.44772 3 1 3.44772 1 4V14V17V20C1 20.5523 1.44772 21 2 21C2.55228 21 3 20.5523 3 20V18H21V20C21 20.5523 21.4477 21 22 21C22.5523 21 23 20.5523 23 20V17V14V11C23 8.23858 20.7614 6 18 6H12C11.4477 6 11 6.44772 11 7V9.5C11 7.567 9.433 6 7.5 6C5.567 6 4 7.567 4 9.5C4 11.433 5.567 13 7.5 13H3V4ZM7.5 13C9.433 13 11 11.433 11 9.5V13H7.5ZM21 15V16H3V15H12H21ZM21 11V13H13V8H18C19.6569 8 21 9.34315 21 11ZM6 9.5C6 8.67157 6.67157 8 7.5 8C8.32843 8 9 8.67157 9 9.5C9 10.3284 8.32843 11 7.5 11C6.67157 11 6 10.3284 6 9.5Z" fill="#000000"></path> </g></svg><p class="ams">8 Beds</p></div><div class="dmrc"></div> <div class="am"><svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" transform="matrix(-1, 0, 0, 1, 0, 0)"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M6 6L3 3V21H21L18 18M6 6L9 9M6 6L5 7M9 9L12 12M9 9L8 10M12 12L15 15M12 12L11 13M15 15L14 16M15 15L18 18M18 18L17 19M6 12V18H12L6 12Z" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path> </g></svg><p class="ams"> 1965sqft</p></div> <div class="dmrc"></div><div class="am"><p class="ams">Parking space</p></div> </section>
+        <div class="us">
+          <p class="usd">Listed by</p>
+          <div class="ush">
+           <p class="usn">Homenest</p>
+            <svg viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path fill-rule="evenodd" clip-rule="evenodd" d="M14.6563 5.24291C15.4743 5.88358 16 6.8804 16 8C16 9.11964 15.4743 10.1165 14.6562 10.7572C14.7816 11.7886 14.4485 12.8652 13.6568 13.6569C12.8651 14.4486 11.7885 14.7817 10.7571 14.6563C10.1164 15.4743 9.1196 16 8 16C6.88038 16 5.88354 15.4743 5.24288 14.6562C4.21141 14.7817 3.13481 14.4485 2.34312 13.6568C1.55143 12.8652 1.2183 11.7886 1.34372 10.7571C0.525698 10.1164 0 9.1196 0 8C0 6.88038 0.525715 5.88354 1.34376 5.24288C1.21834 4.21141 1.55147 3.13481 2.34316 2.34312C3.13485 1.55143 4.21145 1.2183 5.24291 1.34372C5.88358 0.525698 6.8804 0 8 0C9.11964 0 10.1165 0.525732 10.7572 1.3438C11.7886 1.21838 12.8652 1.55152 13.6569 2.3432C14.4486 3.13488 14.7817 4.21146 14.6563 5.24291ZM12.2071 6.20711L10.7929 4.79289L7 8.58579L5.20711 6.79289L3.79289 8.20711L7 11.4142L12.2071 6.20711Z" fill="#20d99c"></path> </g></svg>
+          </div>
+        </div>
+       </section> <!-- cho -->
+      </a> 
+          <!-- Card End -->
+
+
+          <!-- Card Here -->
+      <a class="cmain" href="./comingsoon.html">
+        <section class="iside"><div class="swiper" id="swp">
+           <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+              <!-- Slides -->
+              <img class="swiper-slide" src="images/house1.jpg">
+              <img class="swiper-slide" src="images/hoouse3.webp">
+              <img class="swiper-slide" src="images/house2.jpg">
+              <img class="swiper-slide" src="images/house4.jpg">
+              <img class="swiper-slide" src="images/house5.jpg">
+              <img class="swiper-slide" src="images/house6.jpg">
+              <img class="swiper-slide" src="images/house7.jpg">
+           </div>
+            <!-- If we need pagination -->
+            <div class="swiper-pagination"></div>
+            <!-- If we need navigation buttons -->
+           <div class="swiper-scrollbar"></div>
+           </div>
+         </section> <!-- img goes in here -->
+            <section class="cho">
+        <section class="nap"><p>New family home</p> <p><span class="pr">€1788</span><span class="mow">/Month</span></p></section>
+        <section class="lab"><p>Galway, County Galway</p><img src="images/berr.png" class="bei"></section>
+        <section class="d"><p>Cost efficient big home with 8 beds..</p></section>
+        <section class="aas"><div class="am"><svg fill="#000000" viewBox="0 0 50 50" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"><path d="M25 0C17.28125 0 11 7.625 11 17C11 19.980469 11.632813 22.820313 12.84375 25.375C13.167969 25.144531 13.574219 25 14 25L17 25C18.101563 25 19 25.898438 19 27L25 27C21.132813 27 18 22.523438 18 17C18 11.476563 21.132813 7 25 7C28.867188 7 32 11.476563 32 17C32 22.523438 28.867188 27 25 27L31 27C31 25.898438 31.898438 25 33 25L36 25C36.425781 25 36.832031 25.144531 37.15625 25.375C38.367188 22.820313 39 19.980469 39 17C39 7.625 32.71875 0 25 0 Z M 14 26C13.449219 26 13 26.445313 13 27L18 27C18 26.445313 17.550781 26 17 26 Z M 33 26C32.445313 26 32 26.445313 32 27L37 27C37 26.445313 36.554688 26 36 26 Z M 11 28C9.347656 28 8 29.347656 8 31C8 32.652344 9.347656 34 11 34L39 34C40.652344 34 42 32.652344 42 31C42 29.347656 40.652344 28 39 28 Z M 10.03125 34.875C10.476563 40.53125 15.230469 45 21 45L29 45C34.769531 45 39.523438 40.53125 39.96875 34.875C39.660156 34.949219 39.332031 35 39 35L11 35C10.667969 35 10.339844 34.949219 10.03125 34.875 Z M 15.9375 44.875C15.429688 45.789063 15 47.113281 15 49C15 49.554688 15.449219 50 16 50L34 50C34.007813 50 34.027344 50 34.03125 50C34.585938 50 35.03125 49.554688 35.03125 49C35.03125 48.929688 35.015625 48.847656 35 48.78125C34.96875 47.003906 34.550781 45.757813 34.0625 44.875C32.523438 45.59375 30.808594 46 29 46L21 46C19.191406 46 17.476563 45.59375 15.9375 44.875Z"></path></g></svg><p class="ams">4 Toilets</p></div><div class="dmrc"></div><!-- bed --><div class="am"><svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path fill-rule="evenodd" clip-rule="evenodd" d="M3 4C3 3.44772 2.55228 3 2 3C1.44772 3 1 3.44772 1 4V14V17V20C1 20.5523 1.44772 21 2 21C2.55228 21 3 20.5523 3 20V18H21V20C21 20.5523 21.4477 21 22 21C22.5523 21 23 20.5523 23 20V17V14V11C23 8.23858 20.7614 6 18 6H12C11.4477 6 11 6.44772 11 7V9.5C11 7.567 9.433 6 7.5 6C5.567 6 4 7.567 4 9.5C4 11.433 5.567 13 7.5 13H3V4ZM7.5 13C9.433 13 11 11.433 11 9.5V13H7.5ZM21 15V16H3V15H12H21ZM21 11V13H13V8H18C19.6569 8 21 9.34315 21 11ZM6 9.5C6 8.67157 6.67157 8 7.5 8C8.32843 8 9 8.67157 9 9.5C9 10.3284 8.32843 11 7.5 11C6.67157 11 6 10.3284 6 9.5Z" fill="#000000"></path> </g></svg><p class="ams">8 Beds</p></div><div class="dmrc"></div> <div class="am"><svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" transform="matrix(-1, 0, 0, 1, 0, 0)"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M6 6L3 3V21H21L18 18M6 6L9 9M6 6L5 7M9 9L12 12M9 9L8 10M12 12L15 15M12 12L11 13M15 15L14 16M15 15L18 18M18 18L17 19M6 12V18H12L6 12Z" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path> </g></svg><p class="ams"> 1965sqft</p></div> <div class="dmrc"></div><div class="am"><p class="ams">Parking space</p></div> </section>
+        <div class="us">
+          <p class="usd">Listed by</p>
+          <div class="ush">
+           <p class="usn">Homenest</p>
+            <svg viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path fill-rule="evenodd" clip-rule="evenodd" d="M14.6563 5.24291C15.4743 5.88358 16 6.8804 16 8C16 9.11964 15.4743 10.1165 14.6562 10.7572C14.7816 11.7886 14.4485 12.8652 13.6568 13.6569C12.8651 14.4486 11.7885 14.7817 10.7571 14.6563C10.1164 15.4743 9.1196 16 8 16C6.88038 16 5.88354 15.4743 5.24288 14.6562C4.21141 14.7817 3.13481 14.4485 2.34312 13.6568C1.55143 12.8652 1.2183 11.7886 1.34372 10.7571C0.525698 10.1164 0 9.1196 0 8C0 6.88038 0.525715 5.88354 1.34376 5.24288C1.21834 4.21141 1.55147 3.13481 2.34316 2.34312C3.13485 1.55143 4.21145 1.2183 5.24291 1.34372C5.88358 0.525698 6.8804 0 8 0C9.11964 0 10.1165 0.525732 10.7572 1.3438C11.7886 1.21838 12.8652 1.55152 13.6569 2.3432C14.4486 3.13488 14.7817 4.21146 14.6563 5.24291ZM12.2071 6.20711L10.7929 4.79289L7 8.58579L5.20711 6.79289L3.79289 8.20711L7 11.4142L12.2071 6.20711Z" fill="#20d99c"></path> </g></svg>
+          </div>
+        </div>
+       </section> <!-- cho -->
+      </a> 
+          <!-- Card End -->
+
+<!-- Card Here -->
+      <a class="cmain" href="./comingsoon.html">
+        <section class="iside"><div class="swiper" id="swp">
+           <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+              <!-- Slides -->
+              <img class="swiper-slide" src="images/house1.jpg">
+              <img class="swiper-slide" src="images/hoouse3.webp">
+              <img class="swiper-slide" src="images/house2.jpg">
+              <img class="swiper-slide" src="images/house4.jpg">
+              <img class="swiper-slide" src="images/house5.jpg">
+              <img class="swiper-slide" src="images/house6.jpg">
+              <img class="swiper-slide" src="images/house7.jpg">
+           </div>
+            <!-- If we need pagination -->
+            <div class="swiper-pagination"></div>
+            <!-- If we need navigation buttons -->
+           <div class="swiper-scrollbar"></div>
+           </div>
+         </section> <!-- img goes in here -->
+            <section class="cho">
+        <section class="nap"><p>New family home</p> <p><span class="pr">€1788</span><span class="mow">/Month</span></p></section>
+        <section class="lab"><p>Galway, County Galway</p><img src="images/berr.png" class="bei"></section>
+        <section class="d"><p>Cost efficient big home with 8 beds..</p></section>
+        <section class="aas"><div class="am"><svg fill="#000000" viewBox="0 0 50 50" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"><path d="M25 0C17.28125 0 11 7.625 11 17C11 19.980469 11.632813 22.820313 12.84375 25.375C13.167969 25.144531 13.574219 25 14 25L17 25C18.101563 25 19 25.898438 19 27L25 27C21.132813 27 18 22.523438 18 17C18 11.476563 21.132813 7 25 7C28.867188 7 32 11.476563 32 17C32 22.523438 28.867188 27 25 27L31 27C31 25.898438 31.898438 25 33 25L36 25C36.425781 25 36.832031 25.144531 37.15625 25.375C38.367188 22.820313 39 19.980469 39 17C39 7.625 32.71875 0 25 0 Z M 14 26C13.449219 26 13 26.445313 13 27L18 27C18 26.445313 17.550781 26 17 26 Z M 33 26C32.445313 26 32 26.445313 32 27L37 27C37 26.445313 36.554688 26 36 26 Z M 11 28C9.347656 28 8 29.347656 8 31C8 32.652344 9.347656 34 11 34L39 34C40.652344 34 42 32.652344 42 31C42 29.347656 40.652344 28 39 28 Z M 10.03125 34.875C10.476563 40.53125 15.230469 45 21 45L29 45C34.769531 45 39.523438 40.53125 39.96875 34.875C39.660156 34.949219 39.332031 35 39 35L11 35C10.667969 35 10.339844 34.949219 10.03125 34.875 Z M 15.9375 44.875C15.429688 45.789063 15 47.113281 15 49C15 49.554688 15.449219 50 16 50L34 50C34.007813 50 34.027344 50 34.03125 50C34.585938 50 35.03125 49.554688 35.03125 49C35.03125 48.929688 35.015625 48.847656 35 48.78125C34.96875 47.003906 34.550781 45.757813 34.0625 44.875C32.523438 45.59375 30.808594 46 29 46L21 46C19.191406 46 17.476563 45.59375 15.9375 44.875Z"></path></g></svg><p class="ams">4 Toilets</p></div><div class="dmrc"></div><!-- bed --><div class="am"><svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path fill-rule="evenodd" clip-rule="evenodd" d="M3 4C3 3.44772 2.55228 3 2 3C1.44772 3 1 3.44772 1 4V14V17V20C1 20.5523 1.44772 21 2 21C2.55228 21 3 20.5523 3 20V18H21V20C21 20.5523 21.4477 21 22 21C22.5523 21 23 20.5523 23 20V17V14V11C23 8.23858 20.7614 6 18 6H12C11.4477 6 11 6.44772 11 7V9.5C11 7.567 9.433 6 7.5 6C5.567 6 4 7.567 4 9.5C4 11.433 5.567 13 7.5 13H3V4ZM7.5 13C9.433 13 11 11.433 11 9.5V13H7.5ZM21 15V16H3V15H12H21ZM21 11V13H13V8H18C19.6569 8 21 9.34315 21 11ZM6 9.5C6 8.67157 6.67157 8 7.5 8C8.32843 8 9 8.67157 9 9.5C9 10.3284 8.32843 11 7.5 11C6.67157 11 6 10.3284 6 9.5Z" fill="#000000"></path> </g></svg><p class="ams">8 Beds</p></div><div class="dmrc"></div> <div class="am"><svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" transform="matrix(-1, 0, 0, 1, 0, 0)"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M6 6L3 3V21H21L18 18M6 6L9 9M6 6L5 7M9 9L12 12M9 9L8 10M12 12L15 15M12 12L11 13M15 15L14 16M15 15L18 18M18 18L17 19M6 12V18H12L6 12Z" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path> </g></svg><p class="ams"> 1965sqft</p></div> <div class="dmrc"></div><div class="am"><p class="ams">Parking space</p></div> </section>
+        <div class="us">
+          <p class="usd">Listed by</p>
+          <div class="ush">
+           <p class="usn">Homenest</p>
+            <svg viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path fill-rule="evenodd" clip-rule="evenodd" d="M14.6563 5.24291C15.4743 5.88358 16 6.8804 16 8C16 9.11964 15.4743 10.1165 14.6562 10.7572C14.7816 11.7886 14.4485 12.8652 13.6568 13.6569C12.8651 14.4486 11.7885 14.7817 10.7571 14.6563C10.1164 15.4743 9.1196 16 8 16C6.88038 16 5.88354 15.4743 5.24288 14.6562C4.21141 14.7817 3.13481 14.4485 2.34312 13.6568C1.55143 12.8652 1.2183 11.7886 1.34372 10.7571C0.525698 10.1164 0 9.1196 0 8C0 6.88038 0.525715 5.88354 1.34376 5.24288C1.21834 4.21141 1.55147 3.13481 2.34316 2.34312C3.13485 1.55143 4.21145 1.2183 5.24291 1.34372C5.88358 0.525698 6.8804 0 8 0C9.11964 0 10.1165 0.525732 10.7572 1.3438C11.7886 1.21838 12.8652 1.55152 13.6569 2.3432C14.4486 3.13488 14.7817 4.21146 14.6563 5.24291ZM12.2071 6.20711L10.7929 4.79289L7 8.58579L5.20711 6.79289L3.79289 8.20711L7 11.4142L12.2071 6.20711Z" fill="#20d99c"></path> </g></svg>
+          </div>
+        </div>
+       </section> <!-- cho -->
+      </a> 
+          <!-- Card End -->
+
+
+<!-- Card Here -->
+      <a class="cmain" href="./comingsoon.html">
+        <section class="iside"><div class="swiper" id="swp">
+           <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+              <!-- Slides -->
+              <img class="swiper-slide" src="images/house1.jpg">
+              <img class="swiper-slide" src="images/hoouse3.webp">
+              <img class="swiper-slide" src="images/house2.jpg">
+              <img class="swiper-slide" src="images/house4.jpg">
+              <img class="swiper-slide" src="images/house5.jpg">
+              <img class="swiper-slide" src="images/house6.jpg">
+              <img class="swiper-slide" src="images/house7.jpg">
+           </div>
+            <!-- If we need pagination -->
+            <div class="swiper-pagination"></div>
+            <!-- If we need navigation buttons -->
+           <div class="swiper-scrollbar"></div>
+           </div>
+         </section> <!-- img goes in here -->
+            <section class="cho">
+        <section class="nap"><p>New family home</p> <p><span class="pr">€1788</span><span class="mow">/Month</span></p></section>
+        <section class="lab"><p>Galway, County Galway</p><img src="images/berr.png" class="bei"></section>
+        <section class="d"><p>Cost efficient big home with 8 beds..</p></section>
+        <section class="aas"><div class="am"><svg fill="#000000" viewBox="0 0 50 50" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"><path d="M25 0C17.28125 0 11 7.625 11 17C11 19.980469 11.632813 22.820313 12.84375 25.375C13.167969 25.144531 13.574219 25 14 25L17 25C18.101563 25 19 25.898438 19 27L25 27C21.132813 27 18 22.523438 18 17C18 11.476563 21.132813 7 25 7C28.867188 7 32 11.476563 32 17C32 22.523438 28.867188 27 25 27L31 27C31 25.898438 31.898438 25 33 25L36 25C36.425781 25 36.832031 25.144531 37.15625 25.375C38.367188 22.820313 39 19.980469 39 17C39 7.625 32.71875 0 25 0 Z M 14 26C13.449219 26 13 26.445313 13 27L18 27C18 26.445313 17.550781 26 17 26 Z M 33 26C32.445313 26 32 26.445313 32 27L37 27C37 26.445313 36.554688 26 36 26 Z M 11 28C9.347656 28 8 29.347656 8 31C8 32.652344 9.347656 34 11 34L39 34C40.652344 34 42 32.652344 42 31C42 29.347656 40.652344 28 39 28 Z M 10.03125 34.875C10.476563 40.53125 15.230469 45 21 45L29 45C34.769531 45 39.523438 40.53125 39.96875 34.875C39.660156 34.949219 39.332031 35 39 35L11 35C10.667969 35 10.339844 34.949219 10.03125 34.875 Z M 15.9375 44.875C15.429688 45.789063 15 47.113281 15 49C15 49.554688 15.449219 50 16 50L34 50C34.007813 50 34.027344 50 34.03125 50C34.585938 50 35.03125 49.554688 35.03125 49C35.03125 48.929688 35.015625 48.847656 35 48.78125C34.96875 47.003906 34.550781 45.757813 34.0625 44.875C32.523438 45.59375 30.808594 46 29 46L21 46C19.191406 46 17.476563 45.59375 15.9375 44.875Z"></path></g></svg><p class="ams">4 Toilets</p></div><div class="dmrc"></div><!-- bed --><div class="am"><svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path fill-rule="evenodd" clip-rule="evenodd" d="M3 4C3 3.44772 2.55228 3 2 3C1.44772 3 1 3.44772 1 4V14V17V20C1 20.5523 1.44772 21 2 21C2.55228 21 3 20.5523 3 20V18H21V20C21 20.5523 21.4477 21 22 21C22.5523 21 23 20.5523 23 20V17V14V11C23 8.23858 20.7614 6 18 6H12C11.4477 6 11 6.44772 11 7V9.5C11 7.567 9.433 6 7.5 6C5.567 6 4 7.567 4 9.5C4 11.433 5.567 13 7.5 13H3V4ZM7.5 13C9.433 13 11 11.433 11 9.5V13H7.5ZM21 15V16H3V15H12H21ZM21 11V13H13V8H18C19.6569 8 21 9.34315 21 11ZM6 9.5C6 8.67157 6.67157 8 7.5 8C8.32843 8 9 8.67157 9 9.5C9 10.3284 8.32843 11 7.5 11C6.67157 11 6 10.3284 6 9.5Z" fill="#000000"></path> </g></svg><p class="ams">8 Beds</p></div><div class="dmrc"></div> <div class="am"><svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" transform="matrix(-1, 0, 0, 1, 0, 0)"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M6 6L3 3V21H21L18 18M6 6L9 9M6 6L5 7M9 9L12 12M9 9L8 10M12 12L15 15M12 12L11 13M15 15L14 16M15 15L18 18M18 18L17 19M6 12V18H12L6 12Z" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path> </g></svg><p class="ams"> 1965sqft</p></div> <div class="dmrc"></div><div class="am"><p class="ams">Parking space</p></div> </section>
+        <div class="us">
+          <p class="usd">Listed by</p>
+          <div class="ush">
+           <p class="usn">Homenest</p>
+            <svg viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path fill-rule="evenodd" clip-rule="evenodd" d="M14.6563 5.24291C15.4743 5.88358 16 6.8804 16 8C16 9.11964 15.4743 10.1165 14.6562 10.7572C14.7816 11.7886 14.4485 12.8652 13.6568 13.6569C12.8651 14.4486 11.7885 14.7817 10.7571 14.6563C10.1164 15.4743 9.1196 16 8 16C6.88038 16 5.88354 15.4743 5.24288 14.6562C4.21141 14.7817 3.13481 14.4485 2.34312 13.6568C1.55143 12.8652 1.2183 11.7886 1.34372 10.7571C0.525698 10.1164 0 9.1196 0 8C0 6.88038 0.525715 5.88354 1.34376 5.24288C1.21834 4.21141 1.55147 3.13481 2.34316 2.34312C3.13485 1.55143 4.21145 1.2183 5.24291 1.34372C5.88358 0.525698 6.8804 0 8 0C9.11964 0 10.1165 0.525732 10.7572 1.3438C11.7886 1.21838 12.8652 1.55152 13.6569 2.3432C14.4486 3.13488 14.7817 4.21146 14.6563 5.24291ZM12.2071 6.20711L10.7929 4.79289L7 8.58579L5.20711 6.79289L3.79289 8.20711L7 11.4142L12.2071 6.20711Z" fill="#20d99c"></path> </g></svg>
+          </div>
+        </div>
+       </section> <!-- cho -->
+      </a> 
+          <!-- Card End -->
+
+
+<!-- Card Here -->
+      <a class="cmain" href="./comingsoon.html">
+        <section class="iside"><div class="swiper" id="swp">
+           <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+              <!-- Slides -->
+              <img class="swiper-slide" src="images/house1.jpg">
+              <img class="swiper-slide" src="images/hoouse3.webp">
+              <img class="swiper-slide" src="images/house2.jpg">
+              <img class="swiper-slide" src="images/house4.jpg">
+              <img class="swiper-slide" src="images/house5.jpg">
+              <img class="swiper-slide" src="images/house6.jpg">
+              <img class="swiper-slide" src="images/house7.jpg">
+           </div>
+            <!-- If we need pagination -->
+            <div class="swiper-pagination"></div>
+            <!-- If we need navigation buttons -->
+           <div class="swiper-scrollbar"></div>
+           </div>
+         </section> <!-- img goes in here -->
+            <section class="cho">
+        <section class="nap"><p>New family home</p> <p><span class="pr">€1788</span><span class="mow">/Month</span></p></section>
+        <section class="lab"><p>Galway, County Galway</p><img src="images/berr.png" class="bei"></section>
+        <section class="d"><p>Cost efficient big home with 8 beds..</p></section>
+        <section class="aas"><div class="am"><svg fill="#000000" viewBox="0 0 50 50" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"><path d="M25 0C17.28125 0 11 7.625 11 17C11 19.980469 11.632813 22.820313 12.84375 25.375C13.167969 25.144531 13.574219 25 14 25L17 25C18.101563 25 19 25.898438 19 27L25 27C21.132813 27 18 22.523438 18 17C18 11.476563 21.132813 7 25 7C28.867188 7 32 11.476563 32 17C32 22.523438 28.867188 27 25 27L31 27C31 25.898438 31.898438 25 33 25L36 25C36.425781 25 36.832031 25.144531 37.15625 25.375C38.367188 22.820313 39 19.980469 39 17C39 7.625 32.71875 0 25 0 Z M 14 26C13.449219 26 13 26.445313 13 27L18 27C18 26.445313 17.550781 26 17 26 Z M 33 26C32.445313 26 32 26.445313 32 27L37 27C37 26.445313 36.554688 26 36 26 Z M 11 28C9.347656 28 8 29.347656 8 31C8 32.652344 9.347656 34 11 34L39 34C40.652344 34 42 32.652344 42 31C42 29.347656 40.652344 28 39 28 Z M 10.03125 34.875C10.476563 40.53125 15.230469 45 21 45L29 45C34.769531 45 39.523438 40.53125 39.96875 34.875C39.660156 34.949219 39.332031 35 39 35L11 35C10.667969 35 10.339844 34.949219 10.03125 34.875 Z M 15.9375 44.875C15.429688 45.789063 15 47.113281 15 49C15 49.554688 15.449219 50 16 50L34 50C34.007813 50 34.027344 50 34.03125 50C34.585938 50 35.03125 49.554688 35.03125 49C35.03125 48.929688 35.015625 48.847656 35 48.78125C34.96875 47.003906 34.550781 45.757813 34.0625 44.875C32.523438 45.59375 30.808594 46 29 46L21 46C19.191406 46 17.476563 45.59375 15.9375 44.875Z"></path></g></svg><p class="ams">4 Toilets</p></div><div class="dmrc"></div><!-- bed --><div class="am"><svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path fill-rule="evenodd" clip-rule="evenodd" d="M3 4C3 3.44772 2.55228 3 2 3C1.44772 3 1 3.44772 1 4V14V17V20C1 20.5523 1.44772 21 2 21C2.55228 21 3 20.5523 3 20V18H21V20C21 20.5523 21.4477 21 22 21C22.5523 21 23 20.5523 23 20V17V14V11C23 8.23858 20.7614 6 18 6H12C11.4477 6 11 6.44772 11 7V9.5C11 7.567 9.433 6 7.5 6C5.567 6 4 7.567 4 9.5C4 11.433 5.567 13 7.5 13H3V4ZM7.5 13C9.433 13 11 11.433 11 9.5V13H7.5ZM21 15V16H3V15H12H21ZM21 11V13H13V8H18C19.6569 8 21 9.34315 21 11ZM6 9.5C6 8.67157 6.67157 8 7.5 8C8.32843 8 9 8.67157 9 9.5C9 10.3284 8.32843 11 7.5 11C6.67157 11 6 10.3284 6 9.5Z" fill="#000000"></path> </g></svg><p class="ams">8 Beds</p></div><div class="dmrc"></div> <div class="am"><svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" transform="matrix(-1, 0, 0, 1, 0, 0)"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M6 6L3 3V21H21L18 18M6 6L9 9M6 6L5 7M9 9L12 12M9 9L8 10M12 12L15 15M12 12L11 13M15 15L14 16M15 15L18 18M18 18L17 19M6 12V18H12L6 12Z" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path> </g></svg><p class="ams"> 1965sqft</p></div> <div class="dmrc"></div><div class="am"><p class="ams">Parking space</p></div> </section>
+        <div class="us">
+          <p class="usd">Listed by</p>
+          <div class="ush">
+           <p class="usn">Homenest</p>
+            <svg viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path fill-rule="evenodd" clip-rule="evenodd" d="M14.6563 5.24291C15.4743 5.88358 16 6.8804 16 8C16 9.11964 15.4743 10.1165 14.6562 10.7572C14.7816 11.7886 14.4485 12.8652 13.6568 13.6569C12.8651 14.4486 11.7885 14.7817 10.7571 14.6563C10.1164 15.4743 9.1196 16 8 16C6.88038 16 5.88354 15.4743 5.24288 14.6562C4.21141 14.7817 3.13481 14.4485 2.34312 13.6568C1.55143 12.8652 1.2183 11.7886 1.34372 10.7571C0.525698 10.1164 0 9.1196 0 8C0 6.88038 0.525715 5.88354 1.34376 5.24288C1.21834 4.21141 1.55147 3.13481 2.34316 2.34312C3.13485 1.55143 4.21145 1.2183 5.24291 1.34372C5.88358 0.525698 6.8804 0 8 0C9.11964 0 10.1165 0.525732 10.7572 1.3438C11.7886 1.21838 12.8652 1.55152 13.6569 2.3432C14.4486 3.13488 14.7817 4.21146 14.6563 5.24291ZM12.2071 6.20711L10.7929 4.79289L7 8.58579L5.20711 6.79289L3.79289 8.20711L7 11.4142L12.2071 6.20711Z" fill="#20d99c"></path> </g></svg>
+          </div>
+        </div>
+       </section> <!-- cho -->
+      </a> 
+          <!-- Card End -->
+
+<!-- Card Here -->
+      <a class="cmain" href="./comingsoon.html">
+        <section class="iside"><div class="swiper" id="swp">
+           <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+              <!-- Slides -->
+              <img class="swiper-slide" src="images/house1.jpg">
+              <img class="swiper-slide" src="images/hoouse3.webp">
+              <img class="swiper-slide" src="images/house2.jpg">
+              <img class="swiper-slide" src="images/house4.jpg">
+              <img class="swiper-slide" src="images/house5.jpg">
+              <img class="swiper-slide" src="images/house6.jpg">
+              <img class="swiper-slide" src="images/house7.jpg">
+           </div>
+            <!-- If we need pagination -->
+            <div class="swiper-pagination"></div>
+            <!-- If we need navigation buttons -->
+           <div class="swiper-scrollbar"></div>
+           </div>
+         </section> <!-- img goes in here -->
+            <section class="cho">
+        <section class="nap"><p>New family home</p> <p><span class="pr">€1788</span><span class="mow">/Month</span></p></section>
+        <section class="lab"><p>Galway, County Galway</p><img src="images/berr.png" class="bei"></section>
+        <section class="d"><p>Cost efficient big home with 8 beds..</p></section>
+        <section class="aas"><div class="am"><svg fill="#000000" viewBox="0 0 50 50" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"><path d="M25 0C17.28125 0 11 7.625 11 17C11 19.980469 11.632813 22.820313 12.84375 25.375C13.167969 25.144531 13.574219 25 14 25L17 25C18.101563 25 19 25.898438 19 27L25 27C21.132813 27 18 22.523438 18 17C18 11.476563 21.132813 7 25 7C28.867188 7 32 11.476563 32 17C32 22.523438 28.867188 27 25 27L31 27C31 25.898438 31.898438 25 33 25L36 25C36.425781 25 36.832031 25.144531 37.15625 25.375C38.367188 22.820313 39 19.980469 39 17C39 7.625 32.71875 0 25 0 Z M 14 26C13.449219 26 13 26.445313 13 27L18 27C18 26.445313 17.550781 26 17 26 Z M 33 26C32.445313 26 32 26.445313 32 27L37 27C37 26.445313 36.554688 26 36 26 Z M 11 28C9.347656 28 8 29.347656 8 31C8 32.652344 9.347656 34 11 34L39 34C40.652344 34 42 32.652344 42 31C42 29.347656 40.652344 28 39 28 Z M 10.03125 34.875C10.476563 40.53125 15.230469 45 21 45L29 45C34.769531 45 39.523438 40.53125 39.96875 34.875C39.660156 34.949219 39.332031 35 39 35L11 35C10.667969 35 10.339844 34.949219 10.03125 34.875 Z M 15.9375 44.875C15.429688 45.789063 15 47.113281 15 49C15 49.554688 15.449219 50 16 50L34 50C34.007813 50 34.027344 50 34.03125 50C34.585938 50 35.03125 49.554688 35.03125 49C35.03125 48.929688 35.015625 48.847656 35 48.78125C34.96875 47.003906 34.550781 45.757813 34.0625 44.875C32.523438 45.59375 30.808594 46 29 46L21 46C19.191406 46 17.476563 45.59375 15.9375 44.875Z"></path></g></svg><p class="ams">4 Toilets</p></div><div class="dmrc"></div><!-- bed --><div class="am"><svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path fill-rule="evenodd" clip-rule="evenodd" d="M3 4C3 3.44772 2.55228 3 2 3C1.44772 3 1 3.44772 1 4V14V17V20C1 20.5523 1.44772 21 2 21C2.55228 21 3 20.5523 3 20V18H21V20C21 20.5523 21.4477 21 22 21C22.5523 21 23 20.5523 23 20V17V14V11C23 8.23858 20.7614 6 18 6H12C11.4477 6 11 6.44772 11 7V9.5C11 7.567 9.433 6 7.5 6C5.567 6 4 7.567 4 9.5C4 11.433 5.567 13 7.5 13H3V4ZM7.5 13C9.433 13 11 11.433 11 9.5V13H7.5ZM21 15V16H3V15H12H21ZM21 11V13H13V8H18C19.6569 8 21 9.34315 21 11ZM6 9.5C6 8.67157 6.67157 8 7.5 8C8.32843 8 9 8.67157 9 9.5C9 10.3284 8.32843 11 7.5 11C6.67157 11 6 10.3284 6 9.5Z" fill="#000000"></path> </g></svg><p class="ams">8 Beds</p></div><div class="dmrc"></div> <div class="am"><svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" transform="matrix(-1, 0, 0, 1, 0, 0)"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M6 6L3 3V21H21L18 18M6 6L9 9M6 6L5 7M9 9L12 12M9 9L8 10M12 12L15 15M12 12L11 13M15 15L14 16M15 15L18 18M18 18L17 19M6 12V18H12L6 12Z" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path> </g></svg><p class="ams"> 1965sqft</p></div> <div class="dmrc"></div><div class="am"><p class="ams">Parking space</p></div> </section>
+        <div class="us">
+          <p class="usd">Listed by</p>
+          <div class="ush">
+           <p class="usn">Homenest</p>
+            <svg viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path fill-rule="evenodd" clip-rule="evenodd" d="M14.6563 5.24291C15.4743 5.88358 16 6.8804 16 8C16 9.11964 15.4743 10.1165 14.6562 10.7572C14.7816 11.7886 14.4485 12.8652 13.6568 13.6569C12.8651 14.4486 11.7885 14.7817 10.7571 14.6563C10.1164 15.4743 9.1196 16 8 16C6.88038 16 5.88354 15.4743 5.24288 14.6562C4.21141 14.7817 3.13481 14.4485 2.34312 13.6568C1.55143 12.8652 1.2183 11.7886 1.34372 10.7571C0.525698 10.1164 0 9.1196 0 8C0 6.88038 0.525715 5.88354 1.34376 5.24288C1.21834 4.21141 1.55147 3.13481 2.34316 2.34312C3.13485 1.55143 4.21145 1.2183 5.24291 1.34372C5.88358 0.525698 6.8804 0 8 0C9.11964 0 10.1165 0.525732 10.7572 1.3438C11.7886 1.21838 12.8652 1.55152 13.6569 2.3432C14.4486 3.13488 14.7817 4.21146 14.6563 5.24291ZM12.2071 6.20711L10.7929 4.79289L7 8.58579L5.20711 6.79289L3.79289 8.20711L7 11.4142L12.2071 6.20711Z" fill="#20d99c"></path> </g></svg>
+          </div>
+        </div>
+       </section> <!-- cho -->
+      </a> 
+          <!-- Card End -->
+
+<!-- Card Here -->
+      <a class="cmain" href="./comingsoon.html">
+        <section class="iside"><div class="swiper" id="swp">
+           <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+              <!-- Slides -->
+              <img class="swiper-slide" src="images/house1.jpg">
+              <img class="swiper-slide" src="images/hoouse3.webp">
+              <img class="swiper-slide" src="images/house2.jpg">
+              <img class="swiper-slide" src="images/house4.jpg">
+              <img class="swiper-slide" src="images/house5.jpg">
+              <img class="swiper-slide" src="images/house6.jpg">
+              <img class="swiper-slide" src="images/house7.jpg">
+           </div>
+            <!-- If we need pagination -->
+            <div class="swiper-pagination"></div>
+            <!-- If we need navigation buttons -->
+           <div class="swiper-scrollbar"></div>
+           </div>
+         </section> <!-- img goes in here -->
+            <section class="cho">
+        <section class="nap"><p>New family home</p> <p><span class="pr">€1788</span><span class="mow">/Month</span></p></section>
+        <section class="lab"><p>Galway, County Galway</p><img src="images/berr.png" class="bei"></section>
+        <section class="d"><p>Cost efficient big home with 8 beds..</p></section>
+        <section class="aas"><div class="am"><svg fill="#000000" viewBox="0 0 50 50" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"><path d="M25 0C17.28125 0 11 7.625 11 17C11 19.980469 11.632813 22.820313 12.84375 25.375C13.167969 25.144531 13.574219 25 14 25L17 25C18.101563 25 19 25.898438 19 27L25 27C21.132813 27 18 22.523438 18 17C18 11.476563 21.132813 7 25 7C28.867188 7 32 11.476563 32 17C32 22.523438 28.867188 27 25 27L31 27C31 25.898438 31.898438 25 33 25L36 25C36.425781 25 36.832031 25.144531 37.15625 25.375C38.367188 22.820313 39 19.980469 39 17C39 7.625 32.71875 0 25 0 Z M 14 26C13.449219 26 13 26.445313 13 27L18 27C18 26.445313 17.550781 26 17 26 Z M 33 26C32.445313 26 32 26.445313 32 27L37 27C37 26.445313 36.554688 26 36 26 Z M 11 28C9.347656 28 8 29.347656 8 31C8 32.652344 9.347656 34 11 34L39 34C40.652344 34 42 32.652344 42 31C42 29.347656 40.652344 28 39 28 Z M 10.03125 34.875C10.476563 40.53125 15.230469 45 21 45L29 45C34.769531 45 39.523438 40.53125 39.96875 34.875C39.660156 34.949219 39.332031 35 39 35L11 35C10.667969 35 10.339844 34.949219 10.03125 34.875 Z M 15.9375 44.875C15.429688 45.789063 15 47.113281 15 49C15 49.554688 15.449219 50 16 50L34 50C34.007813 50 34.027344 50 34.03125 50C34.585938 50 35.03125 49.554688 35.03125 49C35.03125 48.929688 35.015625 48.847656 35 48.78125C34.96875 47.003906 34.550781 45.757813 34.0625 44.875C32.523438 45.59375 30.808594 46 29 46L21 46C19.191406 46 17.476563 45.59375 15.9375 44.875Z"></path></g></svg><p class="ams">4 Toilets</p></div><div class="dmrc"></div><!-- bed --><div class="am"><svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path fill-rule="evenodd" clip-rule="evenodd" d="M3 4C3 3.44772 2.55228 3 2 3C1.44772 3 1 3.44772 1 4V14V17V20C1 20.5523 1.44772 21 2 21C2.55228 21 3 20.5523 3 20V18H21V20C21 20.5523 21.4477 21 22 21C22.5523 21 23 20.5523 23 20V17V14V11C23 8.23858 20.7614 6 18 6H12C11.4477 6 11 6.44772 11 7V9.5C11 7.567 9.433 6 7.5 6C5.567 6 4 7.567 4 9.5C4 11.433 5.567 13 7.5 13H3V4ZM7.5 13C9.433 13 11 11.433 11 9.5V13H7.5ZM21 15V16H3V15H12H21ZM21 11V13H13V8H18C19.6569 8 21 9.34315 21 11ZM6 9.5C6 8.67157 6.67157 8 7.5 8C8.32843 8 9 8.67157 9 9.5C9 10.3284 8.32843 11 7.5 11C6.67157 11 6 10.3284 6 9.5Z" fill="#000000"></path> </g></svg><p class="ams">8 Beds</p></div><div class="dmrc"></div> <div class="am"><svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" transform="matrix(-1, 0, 0, 1, 0, 0)"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M6 6L3 3V21H21L18 18M6 6L9 9M6 6L5 7M9 9L12 12M9 9L8 10M12 12L15 15M12 12L11 13M15 15L14 16M15 15L18 18M18 18L17 19M6 12V18H12L6 12Z" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path> </g></svg><p class="ams"> 1965sqft</p></div> <div class="dmrc"></div><div class="am"><p class="ams">Parking space</p></div> </section>
+        <div class="us">
+          <p class="usd">Listed by</p>
+          <div class="ush">
+           <p class="usn">Homenest</p>
+            <svg viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path fill-rule="evenodd" clip-rule="evenodd" d="M14.6563 5.24291C15.4743 5.88358 16 6.8804 16 8C16 9.11964 15.4743 10.1165 14.6562 10.7572C14.7816 11.7886 14.4485 12.8652 13.6568 13.6569C12.8651 14.4486 11.7885 14.7817 10.7571 14.6563C10.1164 15.4743 9.1196 16 8 16C6.88038 16 5.88354 15.4743 5.24288 14.6562C4.21141 14.7817 3.13481 14.4485 2.34312 13.6568C1.55143 12.8652 1.2183 11.7886 1.34372 10.7571C0.525698 10.1164 0 9.1196 0 8C0 6.88038 0.525715 5.88354 1.34376 5.24288C1.21834 4.21141 1.55147 3.13481 2.34316 2.34312C3.13485 1.55143 4.21145 1.2183 5.24291 1.34372C5.88358 0.525698 6.8804 0 8 0C9.11964 0 10.1165 0.525732 10.7572 1.3438C11.7886 1.21838 12.8652 1.55152 13.6569 2.3432C14.4486 3.13488 14.7817 4.21146 14.6563 5.24291ZM12.2071 6.20711L10.7929 4.79289L7 8.58579L5.20711 6.79289L3.79289 8.20711L7 11.4142L12.2071 6.20711Z" fill="#20d99c"></path> </g></svg>
+          </div>
+        </div>
+       </section> <!-- cho -->
+      </a> 
+          <!-- Card End -->
+
+<!-- Card Here -->
+      <a class="cmain" href="./comingsoon.html">
+        <section class="iside"><div class="swiper" id="swp">
+           <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+              <!-- Slides -->
+              <img class="swiper-slide" src="images/house1.jpg">
+              <img class="swiper-slide" src="images/hoouse3.webp">
+              <img class="swiper-slide" src="images/house2.jpg">
+              <img class="swiper-slide" src="images/house4.jpg">
+              <img class="swiper-slide" src="images/house5.jpg">
+              <img class="swiper-slide" src="images/house6.jpg">
+              <img class="swiper-slide" src="images/house7.jpg">
+           </div>
+            <!-- If we need pagination -->
+            <div class="swiper-pagination"></div>
+            <!-- If we need navigation buttons -->
+           <div class="swiper-scrollbar"></div>
+           </div>
+         </section> <!-- img goes in here -->
+            <section class="cho">
+        <section class="nap"><p>New family home</p> <p><span class="pr">€1788</span><span class="mow">/Month</span></p></section>
+        <section class="lab"><p>Galway, County Galway</p><img src="images/berr.png" class="bei"></section>
+        <section class="d"><p>Cost efficient big home with 8 beds..</p></section>
+        <section class="aas"><div class="am"><svg fill="#000000" viewBox="0 0 50 50" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"><path d="M25 0C17.28125 0 11 7.625 11 17C11 19.980469 11.632813 22.820313 12.84375 25.375C13.167969 25.144531 13.574219 25 14 25L17 25C18.101563 25 19 25.898438 19 27L25 27C21.132813 27 18 22.523438 18 17C18 11.476563 21.132813 7 25 7C28.867188 7 32 11.476563 32 17C32 22.523438 28.867188 27 25 27L31 27C31 25.898438 31.898438 25 33 25L36 25C36.425781 25 36.832031 25.144531 37.15625 25.375C38.367188 22.820313 39 19.980469 39 17C39 7.625 32.71875 0 25 0 Z M 14 26C13.449219 26 13 26.445313 13 27L18 27C18 26.445313 17.550781 26 17 26 Z M 33 26C32.445313 26 32 26.445313 32 27L37 27C37 26.445313 36.554688 26 36 26 Z M 11 28C9.347656 28 8 29.347656 8 31C8 32.652344 9.347656 34 11 34L39 34C40.652344 34 42 32.652344 42 31C42 29.347656 40.652344 28 39 28 Z M 10.03125 34.875C10.476563 40.53125 15.230469 45 21 45L29 45C34.769531 45 39.523438 40.53125 39.96875 34.875C39.660156 34.949219 39.332031 35 39 35L11 35C10.667969 35 10.339844 34.949219 10.03125 34.875 Z M 15.9375 44.875C15.429688 45.789063 15 47.113281 15 49C15 49.554688 15.449219 50 16 50L34 50C34.007813 50 34.027344 50 34.03125 50C34.585938 50 35.03125 49.554688 35.03125 49C35.03125 48.929688 35.015625 48.847656 35 48.78125C34.96875 47.003906 34.550781 45.757813 34.0625 44.875C32.523438 45.59375 30.808594 46 29 46L21 46C19.191406 46 17.476563 45.59375 15.9375 44.875Z"></path></g></svg><p class="ams">4 Toilets</p></div><div class="dmrc"></div><!-- bed --><div class="am"><svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path fill-rule="evenodd" clip-rule="evenodd" d="M3 4C3 3.44772 2.55228 3 2 3C1.44772 3 1 3.44772 1 4V14V17V20C1 20.5523 1.44772 21 2 21C2.55228 21 3 20.5523 3 20V18H21V20C21 20.5523 21.4477 21 22 21C22.5523 21 23 20.5523 23 20V17V14V11C23 8.23858 20.7614 6 18 6H12C11.4477 6 11 6.44772 11 7V9.5C11 7.567 9.433 6 7.5 6C5.567 6 4 7.567 4 9.5C4 11.433 5.567 13 7.5 13H3V4ZM7.5 13C9.433 13 11 11.433 11 9.5V13H7.5ZM21 15V16H3V15H12H21ZM21 11V13H13V8H18C19.6569 8 21 9.34315 21 11ZM6 9.5C6 8.67157 6.67157 8 7.5 8C8.32843 8 9 8.67157 9 9.5C9 10.3284 8.32843 11 7.5 11C6.67157 11 6 10.3284 6 9.5Z" fill="#000000"></path> </g></svg><p class="ams">8 Beds</p></div><div class="dmrc"></div> <div class="am"><svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" transform="matrix(-1, 0, 0, 1, 0, 0)"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M6 6L3 3V21H21L18 18M6 6L9 9M6 6L5 7M9 9L12 12M9 9L8 10M12 12L15 15M12 12L11 13M15 15L14 16M15 15L18 18M18 18L17 19M6 12V18H12L6 12Z" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path> </g></svg><p class="ams"> 1965sqft</p></div> <div class="dmrc"></div><div class="am"><p class="ams">Parking space</p></div> </section>
+        <div class="us">
+          <p class="usd">Listed by</p>
+          <div class="ush">
+           <p class="usn">Homenest</p>
+            <svg viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path fill-rule="evenodd" clip-rule="evenodd" d="M14.6563 5.24291C15.4743 5.88358 16 6.8804 16 8C16 9.11964 15.4743 10.1165 14.6562 10.7572C14.7816 11.7886 14.4485 12.8652 13.6568 13.6569C12.8651 14.4486 11.7885 14.7817 10.7571 14.6563C10.1164 15.4743 9.1196 16 8 16C6.88038 16 5.88354 15.4743 5.24288 14.6562C4.21141 14.7817 3.13481 14.4485 2.34312 13.6568C1.55143 12.8652 1.2183 11.7886 1.34372 10.7571C0.525698 10.1164 0 9.1196 0 8C0 6.88038 0.525715 5.88354 1.34376 5.24288C1.21834 4.21141 1.55147 3.13481 2.34316 2.34312C3.13485 1.55143 4.21145 1.2183 5.24291 1.34372C5.88358 0.525698 6.8804 0 8 0C9.11964 0 10.1165 0.525732 10.7572 1.3438C11.7886 1.21838 12.8652 1.55152 13.6569 2.3432C14.4486 3.13488 14.7817 4.21146 14.6563 5.24291ZM12.2071 6.20711L10.7929 4.79289L7 8.58579L5.20711 6.79289L3.79289 8.20711L7 11.4142L12.2071 6.20711Z" fill="#20d99c"></path> </g></svg>
+          </div>
+        </div>
+       </section> <!-- cho -->
+      </a> 
+          <!-- Card End -->
+
+<!-- Card Here -->
+      <a class="cmain" href="./comingsoon.html">
+        <section class="iside"><div class="swiper" id="swp">
+           <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+              <!-- Slides -->
+              <img class="swiper-slide" src="images/house1.jpg">
+              <img class="swiper-slide" src="images/hoouse3.webp">
+              <img class="swiper-slide" src="images/house2.jpg">
+              <img class="swiper-slide" src="images/house4.jpg">
+              <img class="swiper-slide" src="images/house5.jpg">
+              <img class="swiper-slide" src="images/house6.jpg">
+              <img class="swiper-slide" src="images/house7.jpg">
+           </div>
+            <!-- If we need pagination -->
+            <div class="swiper-pagination"></div>
+            <!-- If we need navigation buttons -->
+           <div class="swiper-scrollbar"></div>
+           </div>
+         </section> <!-- img goes in here -->
+            <section class="cho">
+        <section class="nap"><p>New family home</p> <p><span class="pr">€1788</span><span class="mow">/Month</span></p></section>
+        <section class="lab"><p>Galway, County Galway</p><img src="images/berr.png" class="bei"></section>
+        <section class="d"><p>Cost efficient big home with 8 beds..</p></section>
+        <section class="aas"><div class="am"><svg fill="#000000" viewBox="0 0 50 50" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"><path d="M25 0C17.28125 0 11 7.625 11 17C11 19.980469 11.632813 22.820313 12.84375 25.375C13.167969 25.144531 13.574219 25 14 25L17 25C18.101563 25 19 25.898438 19 27L25 27C21.132813 27 18 22.523438 18 17C18 11.476563 21.132813 7 25 7C28.867188 7 32 11.476563 32 17C32 22.523438 28.867188 27 25 27L31 27C31 25.898438 31.898438 25 33 25L36 25C36.425781 25 36.832031 25.144531 37.15625 25.375C38.367188 22.820313 39 19.980469 39 17C39 7.625 32.71875 0 25 0 Z M 14 26C13.449219 26 13 26.445313 13 27L18 27C18 26.445313 17.550781 26 17 26 Z M 33 26C32.445313 26 32 26.445313 32 27L37 27C37 26.445313 36.554688 26 36 26 Z M 11 28C9.347656 28 8 29.347656 8 31C8 32.652344 9.347656 34 11 34L39 34C40.652344 34 42 32.652344 42 31C42 29.347656 40.652344 28 39 28 Z M 10.03125 34.875C10.476563 40.53125 15.230469 45 21 45L29 45C34.769531 45 39.523438 40.53125 39.96875 34.875C39.660156 34.949219 39.332031 35 39 35L11 35C10.667969 35 10.339844 34.949219 10.03125 34.875 Z M 15.9375 44.875C15.429688 45.789063 15 47.113281 15 49C15 49.554688 15.449219 50 16 50L34 50C34.007813 50 34.027344 50 34.03125 50C34.585938 50 35.03125 49.554688 35.03125 49C35.03125 48.929688 35.015625 48.847656 35 48.78125C34.96875 47.003906 34.550781 45.757813 34.0625 44.875C32.523438 45.59375 30.808594 46 29 46L21 46C19.191406 46 17.476563 45.59375 15.9375 44.875Z"></path></g></svg><p class="ams">4 Toilets</p></div><div class="dmrc"></div><!-- bed --><div class="am"><svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path fill-rule="evenodd" clip-rule="evenodd" d="M3 4C3 3.44772 2.55228 3 2 3C1.44772 3 1 3.44772 1 4V14V17V20C1 20.5523 1.44772 21 2 21C2.55228 21 3 20.5523 3 20V18H21V20C21 20.5523 21.4477 21 22 21C22.5523 21 23 20.5523 23 20V17V14V11C23 8.23858 20.7614 6 18 6H12C11.4477 6 11 6.44772 11 7V9.5C11 7.567 9.433 6 7.5 6C5.567 6 4 7.567 4 9.5C4 11.433 5.567 13 7.5 13H3V4ZM7.5 13C9.433 13 11 11.433 11 9.5V13H7.5ZM21 15V16H3V15H12H21ZM21 11V13H13V8H18C19.6569 8 21 9.34315 21 11ZM6 9.5C6 8.67157 6.67157 8 7.5 8C8.32843 8 9 8.67157 9 9.5C9 10.3284 8.32843 11 7.5 11C6.67157 11 6 10.3284 6 9.5Z" fill="#000000"></path> </g></svg><p class="ams">8 Beds</p></div><div class="dmrc"></div> <div class="am"><svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" transform="matrix(-1, 0, 0, 1, 0, 0)"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M6 6L3 3V21H21L18 18M6 6L9 9M6 6L5 7M9 9L12 12M9 9L8 10M12 12L15 15M12 12L11 13M15 15L14 16M15 15L18 18M18 18L17 19M6 12V18H12L6 12Z" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path> </g></svg><p class="ams"> 1965sqft</p></div> <div class="dmrc"></div><div class="am"><p class="ams">Parking space</p></div> </section>
+        <div class="us">
+          <p class="usd">Listed by</p>
+          <div class="ush">
+           <p class="usn">Homenest</p>
+            <svg viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path fill-rule="evenodd" clip-rule="evenodd" d="M14.6563 5.24291C15.4743 5.88358 16 6.8804 16 8C16 9.11964 15.4743 10.1165 14.6562 10.7572C14.7816 11.7886 14.4485 12.8652 13.6568 13.6569C12.8651 14.4486 11.7885 14.7817 10.7571 14.6563C10.1164 15.4743 9.1196 16 8 16C6.88038 16 5.88354 15.4743 5.24288 14.6562C4.21141 14.7817 3.13481 14.4485 2.34312 13.6568C1.55143 12.8652 1.2183 11.7886 1.34372 10.7571C0.525698 10.1164 0 9.1196 0 8C0 6.88038 0.525715 5.88354 1.34376 5.24288C1.21834 4.21141 1.55147 3.13481 2.34316 2.34312C3.13485 1.55143 4.21145 1.2183 5.24291 1.34372C5.88358 0.525698 6.8804 0 8 0C9.11964 0 10.1165 0.525732 10.7572 1.3438C11.7886 1.21838 12.8652 1.55152 13.6569 2.3432C14.4486 3.13488 14.7817 4.21146 14.6563 5.24291ZM12.2071 6.20711L10.7929 4.79289L7 8.58579L5.20711 6.79289L3.79289 8.20711L7 11.4142L12.2071 6.20711Z" fill="#20d99c"></path> </g></svg>
+          </div>
+        </div>
+       </section> <!-- cho -->
+      </a> 
+          <!-- Card End -->
+
+<!-- Card Here -->
+      <a class="cmain" href="./comingsoon.html">
+        <section class="iside"><div class="swiper" id="swp">
+           <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+              <!-- Slides -->
+              <img class="swiper-slide" src="images/house1.jpg">
+              <img class="swiper-slide" src="images/hoouse3.webp">
+              <img class="swiper-slide" src="images/house2.jpg">
+              <img class="swiper-slide" src="images/house4.jpg">
+              <img class="swiper-slide" src="images/house5.jpg">
+              <img class="swiper-slide" src="images/house6.jpg">
+              <img class="swiper-slide" src="images/house7.jpg">
+           </div>
+            <!-- If we need pagination -->
+            <div class="swiper-pagination"></div>
+            <!-- If we need navigation buttons -->
+           <div class="swiper-scrollbar"></div>
+           </div>
+         </section> <!-- img goes in here -->
+            <section class="cho">
+        <section class="nap"><p>New family home</p> <p><span class="pr">€1788</span><span class="mow">/Month</span></p></section>
+        <section class="lab"><p>Galway, County Galway</p><img src="images/berr.png" class="bei"></section>
+        <section class="d"><p>Cost efficient big home with 8 beds..</p></section>
+        <section class="aas"><div class="am"><svg fill="#000000" viewBox="0 0 50 50" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"><path d="M25 0C17.28125 0 11 7.625 11 17C11 19.980469 11.632813 22.820313 12.84375 25.375C13.167969 25.144531 13.574219 25 14 25L17 25C18.101563 25 19 25.898438 19 27L25 27C21.132813 27 18 22.523438 18 17C18 11.476563 21.132813 7 25 7C28.867188 7 32 11.476563 32 17C32 22.523438 28.867188 27 25 27L31 27C31 25.898438 31.898438 25 33 25L36 25C36.425781 25 36.832031 25.144531 37.15625 25.375C38.367188 22.820313 39 19.980469 39 17C39 7.625 32.71875 0 25 0 Z M 14 26C13.449219 26 13 26.445313 13 27L18 27C18 26.445313 17.550781 26 17 26 Z M 33 26C32.445313 26 32 26.445313 32 27L37 27C37 26.445313 36.554688 26 36 26 Z M 11 28C9.347656 28 8 29.347656 8 31C8 32.652344 9.347656 34 11 34L39 34C40.652344 34 42 32.652344 42 31C42 29.347656 40.652344 28 39 28 Z M 10.03125 34.875C10.476563 40.53125 15.230469 45 21 45L29 45C34.769531 45 39.523438 40.53125 39.96875 34.875C39.660156 34.949219 39.332031 35 39 35L11 35C10.667969 35 10.339844 34.949219 10.03125 34.875 Z M 15.9375 44.875C15.429688 45.789063 15 47.113281 15 49C15 49.554688 15.449219 50 16 50L34 50C34.007813 50 34.027344 50 34.03125 50C34.585938 50 35.03125 49.554688 35.03125 49C35.03125 48.929688 35.015625 48.847656 35 48.78125C34.96875 47.003906 34.550781 45.757813 34.0625 44.875C32.523438 45.59375 30.808594 46 29 46L21 46C19.191406 46 17.476563 45.59375 15.9375 44.875Z"></path></g></svg><p class="ams">4 Toilets</p></div><div class="dmrc"></div><!-- bed --><div class="am"><svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path fill-rule="evenodd" clip-rule="evenodd" d="M3 4C3 3.44772 2.55228 3 2 3C1.44772 3 1 3.44772 1 4V14V17V20C1 20.5523 1.44772 21 2 21C2.55228 21 3 20.5523 3 20V18H21V20C21 20.5523 21.4477 21 22 21C22.5523 21 23 20.5523 23 20V17V14V11C23 8.23858 20.7614 6 18 6H12C11.4477 6 11 6.44772 11 7V9.5C11 7.567 9.433 6 7.5 6C5.567 6 4 7.567 4 9.5C4 11.433 5.567 13 7.5 13H3V4ZM7.5 13C9.433 13 11 11.433 11 9.5V13H7.5ZM21 15V16H3V15H12H21ZM21 11V13H13V8H18C19.6569 8 21 9.34315 21 11ZM6 9.5C6 8.67157 6.67157 8 7.5 8C8.32843 8 9 8.67157 9 9.5C9 10.3284 8.32843 11 7.5 11C6.67157 11 6 10.3284 6 9.5Z" fill="#000000"></path> </g></svg><p class="ams">8 Beds</p></div><div class="dmrc"></div> <div class="am"><svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" transform="matrix(-1, 0, 0, 1, 0, 0)"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M6 6L3 3V21H21L18 18M6 6L9 9M6 6L5 7M9 9L12 12M9 9L8 10M12 12L15 15M12 12L11 13M15 15L14 16M15 15L18 18M18 18L17 19M6 12V18H12L6 12Z" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path> </g></svg><p class="ams"> 1965sqft</p></div> <div class="dmrc"></div><div class="am"><p class="ams">Parking space</p></div> </section>
+        <div class="us">
+          <p class="usd">Listed by</p>
+          <div class="ush">
+           <p class="usn">Homenest</p>
+            <svg viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path fill-rule="evenodd" clip-rule="evenodd" d="M14.6563 5.24291C15.4743 5.88358 16 6.8804 16 8C16 9.11964 15.4743 10.1165 14.6562 10.7572C14.7816 11.7886 14.4485 12.8652 13.6568 13.6569C12.8651 14.4486 11.7885 14.7817 10.7571 14.6563C10.1164 15.4743 9.1196 16 8 16C6.88038 16 5.88354 15.4743 5.24288 14.6562C4.21141 14.7817 3.13481 14.4485 2.34312 13.6568C1.55143 12.8652 1.2183 11.7886 1.34372 10.7571C0.525698 10.1164 0 9.1196 0 8C0 6.88038 0.525715 5.88354 1.34376 5.24288C1.21834 4.21141 1.55147 3.13481 2.34316 2.34312C3.13485 1.55143 4.21145 1.2183 5.24291 1.34372C5.88358 0.525698 6.8804 0 8 0C9.11964 0 10.1165 0.525732 10.7572 1.3438C11.7886 1.21838 12.8652 1.55152 13.6569 2.3432C14.4486 3.13488 14.7817 4.21146 14.6563 5.24291ZM12.2071 6.20711L10.7929 4.79289L7 8.58579L5.20711 6.79289L3.79289 8.20711L7 11.4142L12.2071 6.20711Z" fill="#20d99c"></path> </g></svg>
+          </div>
+        </div>
+       </section> <!-- cho -->
+      </a> 
+          <!-- Card End -->
+
+<!-- Card Here -->
+      <a class="cmain" href="./comingsoon.html">
+        <section class="iside"><div class="swiper" id="swp">
+           <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+              <!-- Slides -->
+              <img class="swiper-slide" src="images/house1.jpg">
+              <img class="swiper-slide" src="images/hoouse3.webp">
+              <img class="swiper-slide" src="images/house2.jpg">
+              <img class="swiper-slide" src="images/house4.jpg">
+              <img class="swiper-slide" src="images/house5.jpg">
+              <img class="swiper-slide" src="images/house6.jpg">
+              <img class="swiper-slide" src="images/house7.jpg">
+           </div>
+            <!-- If we need pagination -->
+            <div class="swiper-pagination"></div>
+            <!-- If we need navigation buttons -->
+           <div class="swiper-scrollbar"></div>
+           </div>
+         </section> <!-- img goes in here -->
+            <section class="cho">
+        <section class="nap"><p>New family home</p> <p><span class="pr">€1788</span><span class="mow">/Month</span></p></section>
+        <section class="lab"><p>Galway, County Galway</p><img src="images/berr.png" class="bei"></section>
+        <section class="d"><p>Cost efficient big home with 8 beds..</p></section>
+        <section class="aas"><div class="am"><svg fill="#000000" viewBox="0 0 50 50" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"><path d="M25 0C17.28125 0 11 7.625 11 17C11 19.980469 11.632813 22.820313 12.84375 25.375C13.167969 25.144531 13.574219 25 14 25L17 25C18.101563 25 19 25.898438 19 27L25 27C21.132813 27 18 22.523438 18 17C18 11.476563 21.132813 7 25 7C28.867188 7 32 11.476563 32 17C32 22.523438 28.867188 27 25 27L31 27C31 25.898438 31.898438 25 33 25L36 25C36.425781 25 36.832031 25.144531 37.15625 25.375C38.367188 22.820313 39 19.980469 39 17C39 7.625 32.71875 0 25 0 Z M 14 26C13.449219 26 13 26.445313 13 27L18 27C18 26.445313 17.550781 26 17 26 Z M 33 26C32.445313 26 32 26.445313 32 27L37 27C37 26.445313 36.554688 26 36 26 Z M 11 28C9.347656 28 8 29.347656 8 31C8 32.652344 9.347656 34 11 34L39 34C40.652344 34 42 32.652344 42 31C42 29.347656 40.652344 28 39 28 Z M 10.03125 34.875C10.476563 40.53125 15.230469 45 21 45L29 45C34.769531 45 39.523438 40.53125 39.96875 34.875C39.660156 34.949219 39.332031 35 39 35L11 35C10.667969 35 10.339844 34.949219 10.03125 34.875 Z M 15.9375 44.875C15.429688 45.789063 15 47.113281 15 49C15 49.554688 15.449219 50 16 50L34 50C34.007813 50 34.027344 50 34.03125 50C34.585938 50 35.03125 49.554688 35.03125 49C35.03125 48.929688 35.015625 48.847656 35 48.78125C34.96875 47.003906 34.550781 45.757813 34.0625 44.875C32.523438 45.59375 30.808594 46 29 46L21 46C19.191406 46 17.476563 45.59375 15.9375 44.875Z"></path></g></svg><p class="ams">4 Toilets</p></div><div class="dmrc"></div><!-- bed --><div class="am"><svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path fill-rule="evenodd" clip-rule="evenodd" d="M3 4C3 3.44772 2.55228 3 2 3C1.44772 3 1 3.44772 1 4V14V17V20C1 20.5523 1.44772 21 2 21C2.55228 21 3 20.5523 3 20V18H21V20C21 20.5523 21.4477 21 22 21C22.5523 21 23 20.5523 23 20V17V14V11C23 8.23858 20.7614 6 18 6H12C11.4477 6 11 6.44772 11 7V9.5C11 7.567 9.433 6 7.5 6C5.567 6 4 7.567 4 9.5C4 11.433 5.567 13 7.5 13H3V4ZM7.5 13C9.433 13 11 11.433 11 9.5V13H7.5ZM21 15V16H3V15H12H21ZM21 11V13H13V8H18C19.6569 8 21 9.34315 21 11ZM6 9.5C6 8.67157 6.67157 8 7.5 8C8.32843 8 9 8.67157 9 9.5C9 10.3284 8.32843 11 7.5 11C6.67157 11 6 10.3284 6 9.5Z" fill="#000000"></path> </g></svg><p class="ams">8 Beds</p></div><div class="dmrc"></div> <div class="am"><svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" transform="matrix(-1, 0, 0, 1, 0, 0)"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M6 6L3 3V21H21L18 18M6 6L9 9M6 6L5 7M9 9L12 12M9 9L8 10M12 12L15 15M12 12L11 13M15 15L14 16M15 15L18 18M18 18L17 19M6 12V18H12L6 12Z" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path> </g></svg><p class="ams"> 1965sqft</p></div> <div class="dmrc"></div><div class="am"><p class="ams">Parking space</p></div> </section>
+        <div class="us">
+          <p class="usd">Listed by</p>
+          <div class="ush">
+           <p class="usn">Homenest</p>
+            <svg viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path fill-rule="evenodd" clip-rule="evenodd" d="M14.6563 5.24291C15.4743 5.88358 16 6.8804 16 8C16 9.11964 15.4743 10.1165 14.6562 10.7572C14.7816 11.7886 14.4485 12.8652 13.6568 13.6569C12.8651 14.4486 11.7885 14.7817 10.7571 14.6563C10.1164 15.4743 9.1196 16 8 16C6.88038 16 5.88354 15.4743 5.24288 14.6562C4.21141 14.7817 3.13481 14.4485 2.34312 13.6568C1.55143 12.8652 1.2183 11.7886 1.34372 10.7571C0.525698 10.1164 0 9.1196 0 8C0 6.88038 0.525715 5.88354 1.34376 5.24288C1.21834 4.21141 1.55147 3.13481 2.34316 2.34312C3.13485 1.55143 4.21145 1.2183 5.24291 1.34372C5.88358 0.525698 6.8804 0 8 0C9.11964 0 10.1165 0.525732 10.7572 1.3438C11.7886 1.21838 12.8652 1.55152 13.6569 2.3432C14.4486 3.13488 14.7817 4.21146 14.6563 5.24291ZM12.2071 6.20711L10.7929 4.79289L7 8.58579L5.20711 6.79289L3.79289 8.20711L7 11.4142L12.2071 6.20711Z" fill="#20d99c"></path> </g></svg>
+          </div>
+        </div>
+       </section> <!-- cho -->
+      </a> 
+          <!-- Card End -->
+
+<!-- Card Here -->
+      <a class="cmain" href="./comingsoon.html">
+        <section class="iside"><div class="swiper" id="swp">
+           <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+              <!-- Slides -->
+              <img class="swiper-slide" src="images/house1.jpg">
+              <img class="swiper-slide" src="images/hoouse3.webp">
+              <img class="swiper-slide" src="images/house2.jpg">
+              <img class="swiper-slide" src="images/house4.jpg">
+              <img class="swiper-slide" src="images/house5.jpg">
+              <img class="swiper-slide" src="images/house6.jpg">
+              <img class="swiper-slide" src="images/house7.jpg">
+           </div>
+            <!-- If we need pagination -->
+            <div class="swiper-pagination"></div>
+            <!-- If we need navigation buttons -->
+           <div class="swiper-scrollbar"></div>
+           </div>
+         </section> <!-- img goes in here -->
+            <section class="cho">
+        <section class="nap"><p>New family home</p> <p><span class="pr">€1788</span><span class="mow">/Month</span></p></section>
+        <section class="lab"><p>Galway, County Galway</p><img src="images/berr.png" class="bei"></section>
+        <section class="d"><p>Cost efficient big home with 8 beds..</p></section>
+        <section class="aas"><div class="am"><svg fill="#000000" viewBox="0 0 50 50" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"><path d="M25 0C17.28125 0 11 7.625 11 17C11 19.980469 11.632813 22.820313 12.84375 25.375C13.167969 25.144531 13.574219 25 14 25L17 25C18.101563 25 19 25.898438 19 27L25 27C21.132813 27 18 22.523438 18 17C18 11.476563 21.132813 7 25 7C28.867188 7 32 11.476563 32 17C32 22.523438 28.867188 27 25 27L31 27C31 25.898438 31.898438 25 33 25L36 25C36.425781 25 36.832031 25.144531 37.15625 25.375C38.367188 22.820313 39 19.980469 39 17C39 7.625 32.71875 0 25 0 Z M 14 26C13.449219 26 13 26.445313 13 27L18 27C18 26.445313 17.550781 26 17 26 Z M 33 26C32.445313 26 32 26.445313 32 27L37 27C37 26.445313 36.554688 26 36 26 Z M 11 28C9.347656 28 8 29.347656 8 31C8 32.652344 9.347656 34 11 34L39 34C40.652344 34 42 32.652344 42 31C42 29.347656 40.652344 28 39 28 Z M 10.03125 34.875C10.476563 40.53125 15.230469 45 21 45L29 45C34.769531 45 39.523438 40.53125 39.96875 34.875C39.660156 34.949219 39.332031 35 39 35L11 35C10.667969 35 10.339844 34.949219 10.03125 34.875 Z M 15.9375 44.875C15.429688 45.789063 15 47.113281 15 49C15 49.554688 15.449219 50 16 50L34 50C34.007813 50 34.027344 50 34.03125 50C34.585938 50 35.03125 49.554688 35.03125 49C35.03125 48.929688 35.015625 48.847656 35 48.78125C34.96875 47.003906 34.550781 45.757813 34.0625 44.875C32.523438 45.59375 30.808594 46 29 46L21 46C19.191406 46 17.476563 45.59375 15.9375 44.875Z"></path></g></svg><p class="ams">4 Toilets</p></div><div class="dmrc"></div><!-- bed --><div class="am"><svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path fill-rule="evenodd" clip-rule="evenodd" d="M3 4C3 3.44772 2.55228 3 2 3C1.44772 3 1 3.44772 1 4V14V17V20C1 20.5523 1.44772 21 2 21C2.55228 21 3 20.5523 3 20V18H21V20C21 20.5523 21.4477 21 22 21C22.5523 21 23 20.5523 23 20V17V14V11C23 8.23858 20.7614 6 18 6H12C11.4477 6 11 6.44772 11 7V9.5C11 7.567 9.433 6 7.5 6C5.567 6 4 7.567 4 9.5C4 11.433 5.567 13 7.5 13H3V4ZM7.5 13C9.433 13 11 11.433 11 9.5V13H7.5ZM21 15V16H3V15H12H21ZM21 11V13H13V8H18C19.6569 8 21 9.34315 21 11ZM6 9.5C6 8.67157 6.67157 8 7.5 8C8.32843 8 9 8.67157 9 9.5C9 10.3284 8.32843 11 7.5 11C6.67157 11 6 10.3284 6 9.5Z" fill="#000000"></path> </g></svg><p class="ams">8 Beds</p></div><div class="dmrc"></div> <div class="am"><svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" transform="matrix(-1, 0, 0, 1, 0, 0)"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M6 6L3 3V21H21L18 18M6 6L9 9M6 6L5 7M9 9L12 12M9 9L8 10M12 12L15 15M12 12L11 13M15 15L14 16M15 15L18 18M18 18L17 19M6 12V18H12L6 12Z" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path> </g></svg><p class="ams"> 1965sqft</p></div> <div class="dmrc"></div><div class="am"><p class="ams">Parking space</p></div> </section>
+        <div class="us">
+          <p class="usd">Listed by</p>
+          <div class="ush">
+           <p class="usn">Homenest</p>
+            <svg viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path fill-rule="evenodd" clip-rule="evenodd" d="M14.6563 5.24291C15.4743 5.88358 16 6.8804 16 8C16 9.11964 15.4743 10.1165 14.6562 10.7572C14.7816 11.7886 14.4485 12.8652 13.6568 13.6569C12.8651 14.4486 11.7885 14.7817 10.7571 14.6563C10.1164 15.4743 9.1196 16 8 16C6.88038 16 5.88354 15.4743 5.24288 14.6562C4.21141 14.7817 3.13481 14.4485 2.34312 13.6568C1.55143 12.8652 1.2183 11.7886 1.34372 10.7571C0.525698 10.1164 0 9.1196 0 8C0 6.88038 0.525715 5.88354 1.34376 5.24288C1.21834 4.21141 1.55147 3.13481 2.34316 2.34312C3.13485 1.55143 4.21145 1.2183 5.24291 1.34372C5.88358 0.525698 6.8804 0 8 0C9.11964 0 10.1165 0.525732 10.7572 1.3438C11.7886 1.21838 12.8652 1.55152 13.6569 2.3432C14.4486 3.13488 14.7817 4.21146 14.6563 5.24291ZM12.2071 6.20711L10.7929 4.79289L7 8.58579L5.20711 6.79289L3.79289 8.20711L7 11.4142L12.2071 6.20711Z" fill="#20d99c"></path> </g></svg>
+          </div>
+        </div>
+       </section> <!-- cho -->
+      </a> 
+          <!-- Card End -->
+
+<!-- Card Here -->
+      <a class="cmain" href="./comingsoon.html">
+        <section class="iside"><div class="swiper" id="swp">
+           <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+              <!-- Slides -->
+              <img class="swiper-slide" src="images/house1.jpg">
+              <img class="swiper-slide" src="images/hoouse3.webp">
+              <img class="swiper-slide" src="images/house2.jpg">
+              <img class="swiper-slide" src="images/house4.jpg">
+              <img class="swiper-slide" src="images/house5.jpg">
+              <img class="swiper-slide" src="images/house6.jpg">
+              <img class="swiper-slide" src="images/house7.jpg">
+           </div>
+            <!-- If we need pagination -->
+            <div class="swiper-pagination"></div>
+            <!-- If we need navigation buttons -->
+           <div class="swiper-scrollbar"></div>
+           </div>
+         </section> <!-- img goes in here -->
+            <section class="cho">
+        <section class="nap"><p>New family home</p> <p><span class="pr">€1788</span><span class="mow">/Month</span></p></section>
+        <section class="lab"><p>Galway, County Galway</p><img src="images/berr.png" class="bei"></section>
+        <section class="d"><p>Cost efficient big home with 8 beds..</p></section>
+        <section class="aas"><div class="am"><svg fill="#000000" viewBox="0 0 50 50" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"><path d="M25 0C17.28125 0 11 7.625 11 17C11 19.980469 11.632813 22.820313 12.84375 25.375C13.167969 25.144531 13.574219 25 14 25L17 25C18.101563 25 19 25.898438 19 27L25 27C21.132813 27 18 22.523438 18 17C18 11.476563 21.132813 7 25 7C28.867188 7 32 11.476563 32 17C32 22.523438 28.867188 27 25 27L31 27C31 25.898438 31.898438 25 33 25L36 25C36.425781 25 36.832031 25.144531 37.15625 25.375C38.367188 22.820313 39 19.980469 39 17C39 7.625 32.71875 0 25 0 Z M 14 26C13.449219 26 13 26.445313 13 27L18 27C18 26.445313 17.550781 26 17 26 Z M 33 26C32.445313 26 32 26.445313 32 27L37 27C37 26.445313 36.554688 26 36 26 Z M 11 28C9.347656 28 8 29.347656 8 31C8 32.652344 9.347656 34 11 34L39 34C40.652344 34 42 32.652344 42 31C42 29.347656 40.652344 28 39 28 Z M 10.03125 34.875C10.476563 40.53125 15.230469 45 21 45L29 45C34.769531 45 39.523438 40.53125 39.96875 34.875C39.660156 34.949219 39.332031 35 39 35L11 35C10.667969 35 10.339844 34.949219 10.03125 34.875 Z M 15.9375 44.875C15.429688 45.789063 15 47.113281 15 49C15 49.554688 15.449219 50 16 50L34 50C34.007813 50 34.027344 50 34.03125 50C34.585938 50 35.03125 49.554688 35.03125 49C35.03125 48.929688 35.015625 48.847656 35 48.78125C34.96875 47.003906 34.550781 45.757813 34.0625 44.875C32.523438 45.59375 30.808594 46 29 46L21 46C19.191406 46 17.476563 45.59375 15.9375 44.875Z"></path></g></svg><p class="ams">4 Toilets</p></div><div class="dmrc"></div><!-- bed --><div class="am"><svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path fill-rule="evenodd" clip-rule="evenodd" d="M3 4C3 3.44772 2.55228 3 2 3C1.44772 3 1 3.44772 1 4V14V17V20C1 20.5523 1.44772 21 2 21C2.55228 21 3 20.5523 3 20V18H21V20C21 20.5523 21.4477 21 22 21C22.5523 21 23 20.5523 23 20V17V14V11C23 8.23858 20.7614 6 18 6H12C11.4477 6 11 6.44772 11 7V9.5C11 7.567 9.433 6 7.5 6C5.567 6 4 7.567 4 9.5C4 11.433 5.567 13 7.5 13H3V4ZM7.5 13C9.433 13 11 11.433 11 9.5V13H7.5ZM21 15V16H3V15H12H21ZM21 11V13H13V8H18C19.6569 8 21 9.34315 21 11ZM6 9.5C6 8.67157 6.67157 8 7.5 8C8.32843 8 9 8.67157 9 9.5C9 10.3284 8.32843 11 7.5 11C6.67157 11 6 10.3284 6 9.5Z" fill="#000000"></path> </g></svg><p class="ams">8 Beds</p></div><div class="dmrc"></div> <div class="am"><svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" transform="matrix(-1, 0, 0, 1, 0, 0)"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M6 6L3 3V21H21L18 18M6 6L9 9M6 6L5 7M9 9L12 12M9 9L8 10M12 12L15 15M12 12L11 13M15 15L14 16M15 15L18 18M18 18L17 19M6 12V18H12L6 12Z" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path> </g></svg><p class="ams"> 1965sqft</p></div> <div class="dmrc"></div><div class="am"><p class="ams">Parking space</p></div> </section>
+        <div class="us">
+          <p class="usd">Listed by</p>
+          <div class="ush">
+           <p class="usn">Homenest</p>
+            <svg viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path fill-rule="evenodd" clip-rule="evenodd" d="M14.6563 5.24291C15.4743 5.88358 16 6.8804 16 8C16 9.11964 15.4743 10.1165 14.6562 10.7572C14.7816 11.7886 14.4485 12.8652 13.6568 13.6569C12.8651 14.4486 11.7885 14.7817 10.7571 14.6563C10.1164 15.4743 9.1196 16 8 16C6.88038 16 5.88354 15.4743 5.24288 14.6562C4.21141 14.7817 3.13481 14.4485 2.34312 13.6568C1.55143 12.8652 1.2183 11.7886 1.34372 10.7571C0.525698 10.1164 0 9.1196 0 8C0 6.88038 0.525715 5.88354 1.34376 5.24288C1.21834 4.21141 1.55147 3.13481 2.34316 2.34312C3.13485 1.55143 4.21145 1.2183 5.24291 1.34372C5.88358 0.525698 6.8804 0 8 0C9.11964 0 10.1165 0.525732 10.7572 1.3438C11.7886 1.21838 12.8652 1.55152 13.6569 2.3432C14.4486 3.13488 14.7817 4.21146 14.6563 5.24291ZM12.2071 6.20711L10.7929 4.79289L7 8.58579L5.20711 6.79289L3.79289 8.20711L7 11.4142L12.2071 6.20711Z" fill="#20d99c"></path> </g></svg>
+          </div>
+        </div>
+       </section> <!-- cho -->
+      </a> 
+          <!-- Card End -->
+
+<!-- Card Here -->
+      <a class="cmain" href="./comingsoon.html">
+        <section class="iside"><div class="swiper" id="swp">
+           <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+              <!-- Slides -->
+              <img class="swiper-slide" src="images/house1.jpg">
+              <img class="swiper-slide" src="images/hoouse3.webp">
+              <img class="swiper-slide" src="images/house2.jpg">
+              <img class="swiper-slide" src="images/house4.jpg">
+              <img class="swiper-slide" src="images/house5.jpg">
+              <img class="swiper-slide" src="images/house6.jpg">
+              <img class="swiper-slide" src="images/house7.jpg">
+           </div>
+            <!-- If we need pagination -->
+            <div class="swiper-pagination"></div>
+            <!-- If we need navigation buttons -->
+           <div class="swiper-scrollbar"></div>
+           </div>
+         </section> <!-- img goes in here -->
+            <section class="cho">
+        <section class="nap"><p>New family home</p> <p><span class="pr">€1788</span><span class="mow">/Month</span></p></section>
+        <section class="lab"><p>Galway, County Galway</p><img src="images/berr.png" class="bei"></section>
+        <section class="d"><p>Cost efficient big home with 8 beds..</p></section>
+        <section class="aas"><div class="am"><svg fill="#000000" viewBox="0 0 50 50" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"><path d="M25 0C17.28125 0 11 7.625 11 17C11 19.980469 11.632813 22.820313 12.84375 25.375C13.167969 25.144531 13.574219 25 14 25L17 25C18.101563 25 19 25.898438 19 27L25 27C21.132813 27 18 22.523438 18 17C18 11.476563 21.132813 7 25 7C28.867188 7 32 11.476563 32 17C32 22.523438 28.867188 27 25 27L31 27C31 25.898438 31.898438 25 33 25L36 25C36.425781 25 36.832031 25.144531 37.15625 25.375C38.367188 22.820313 39 19.980469 39 17C39 7.625 32.71875 0 25 0 Z M 14 26C13.449219 26 13 26.445313 13 27L18 27C18 26.445313 17.550781 26 17 26 Z M 33 26C32.445313 26 32 26.445313 32 27L37 27C37 26.445313 36.554688 26 36 26 Z M 11 28C9.347656 28 8 29.347656 8 31C8 32.652344 9.347656 34 11 34L39 34C40.652344 34 42 32.652344 42 31C42 29.347656 40.652344 28 39 28 Z M 10.03125 34.875C10.476563 40.53125 15.230469 45 21 45L29 45C34.769531 45 39.523438 40.53125 39.96875 34.875C39.660156 34.949219 39.332031 35 39 35L11 35C10.667969 35 10.339844 34.949219 10.03125 34.875 Z M 15.9375 44.875C15.429688 45.789063 15 47.113281 15 49C15 49.554688 15.449219 50 16 50L34 50C34.007813 50 34.027344 50 34.03125 50C34.585938 50 35.03125 49.554688 35.03125 49C35.03125 48.929688 35.015625 48.847656 35 48.78125C34.96875 47.003906 34.550781 45.757813 34.0625 44.875C32.523438 45.59375 30.808594 46 29 46L21 46C19.191406 46 17.476563 45.59375 15.9375 44.875Z"></path></g></svg><p class="ams">4 Toilets</p></div><div class="dmrc"></div><!-- bed --><div class="am"><svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path fill-rule="evenodd" clip-rule="evenodd" d="M3 4C3 3.44772 2.55228 3 2 3C1.44772 3 1 3.44772 1 4V14V17V20C1 20.5523 1.44772 21 2 21C2.55228 21 3 20.5523 3 20V18H21V20C21 20.5523 21.4477 21 22 21C22.5523 21 23 20.5523 23 20V17V14V11C23 8.23858 20.7614 6 18 6H12C11.4477 6 11 6.44772 11 7V9.5C11 7.567 9.433 6 7.5 6C5.567 6 4 7.567 4 9.5C4 11.433 5.567 13 7.5 13H3V4ZM7.5 13C9.433 13 11 11.433 11 9.5V13H7.5ZM21 15V16H3V15H12H21ZM21 11V13H13V8H18C19.6569 8 21 9.34315 21 11ZM6 9.5C6 8.67157 6.67157 8 7.5 8C8.32843 8 9 8.67157 9 9.5C9 10.3284 8.32843 11 7.5 11C6.67157 11 6 10.3284 6 9.5Z" fill="#000000"></path> </g></svg><p class="ams">8 Beds</p></div><div class="dmrc"></div> <div class="am"><svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" transform="matrix(-1, 0, 0, 1, 0, 0)"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M6 6L3 3V21H21L18 18M6 6L9 9M6 6L5 7M9 9L12 12M9 9L8 10M12 12L15 15M12 12L11 13M15 15L14 16M15 15L18 18M18 18L17 19M6 12V18H12L6 12Z" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path> </g></svg><p class="ams"> 1965sqft</p></div> <div class="dmrc"></div><div class="am"><p class="ams">Parking space</p></div> </section>
+        <div class="us">
+          <p class="usd">Listed by</p>
+          <div class="ush">
+           <p class="usn">Homenest</p>
+            <svg viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path fill-rule="evenodd" clip-rule="evenodd" d="M14.6563 5.24291C15.4743 5.88358 16 6.8804 16 8C16 9.11964 15.4743 10.1165 14.6562 10.7572C14.7816 11.7886 14.4485 12.8652 13.6568 13.6569C12.8651 14.4486 11.7885 14.7817 10.7571 14.6563C10.1164 15.4743 9.1196 16 8 16C6.88038 16 5.88354 15.4743 5.24288 14.6562C4.21141 14.7817 3.13481 14.4485 2.34312 13.6568C1.55143 12.8652 1.2183 11.7886 1.34372 10.7571C0.525698 10.1164 0 9.1196 0 8C0 6.88038 0.525715 5.88354 1.34376 5.24288C1.21834 4.21141 1.55147 3.13481 2.34316 2.34312C3.13485 1.55143 4.21145 1.2183 5.24291 1.34372C5.88358 0.525698 6.8804 0 8 0C9.11964 0 10.1165 0.525732 10.7572 1.3438C11.7886 1.21838 12.8652 1.55152 13.6569 2.3432C14.4486 3.13488 14.7817 4.21146 14.6563 5.24291ZM12.2071 6.20711L10.7929 4.79289L7 8.58579L5.20711 6.79289L3.79289 8.20711L7 11.4142L12.2071 6.20711Z" fill="#20d99c"></path> </g></svg>
+          </div>
+        </div>
+       </section> <!-- cho -->
+      </a> 
+          <!-- Card End -->
+
+<!-- Card Here -->
+      <a class="cmain" href="./comingsoon.html">
+        <section class="iside"><div class="swiper" id="swp">
+           <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+              <!-- Slides -->
+              <img class="swiper-slide" src="images/house1.jpg">
+              <img class="swiper-slide" src="images/hoouse3.webp">
+              <img class="swiper-slide" src="images/house2.jpg">
+              <img class="swiper-slide" src="images/house4.jpg">
+              <img class="swiper-slide" src="images/house5.jpg">
+              <img class="swiper-slide" src="images/house6.jpg">
+              <img class="swiper-slide" src="images/house7.jpg">
+           </div>
+            <!-- If we need pagination -->
+            <div class="swiper-pagination"></div>
+            <!-- If we need navigation buttons -->
+           <div class="swiper-scrollbar"></div>
+           </div>
+         </section> <!-- img goes in here -->
+            <section class="cho">
+        <section class="nap"><p>New family home</p> <p><span class="pr">€1788</span><span class="mow">/Month</span></p></section>
+        <section class="lab"><p>Galway, County Galway</p><img src="images/berr.png" class="bei"></section>
+        <section class="d"><p>Cost efficient big home with 8 beds..</p></section>
+        <section class="aas"><div class="am"><svg fill="#000000" viewBox="0 0 50 50" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"><path d="M25 0C17.28125 0 11 7.625 11 17C11 19.980469 11.632813 22.820313 12.84375 25.375C13.167969 25.144531 13.574219 25 14 25L17 25C18.101563 25 19 25.898438 19 27L25 27C21.132813 27 18 22.523438 18 17C18 11.476563 21.132813 7 25 7C28.867188 7 32 11.476563 32 17C32 22.523438 28.867188 27 25 27L31 27C31 25.898438 31.898438 25 33 25L36 25C36.425781 25 36.832031 25.144531 37.15625 25.375C38.367188 22.820313 39 19.980469 39 17C39 7.625 32.71875 0 25 0 Z M 14 26C13.449219 26 13 26.445313 13 27L18 27C18 26.445313 17.550781 26 17 26 Z M 33 26C32.445313 26 32 26.445313 32 27L37 27C37 26.445313 36.554688 26 36 26 Z M 11 28C9.347656 28 8 29.347656 8 31C8 32.652344 9.347656 34 11 34L39 34C40.652344 34 42 32.652344 42 31C42 29.347656 40.652344 28 39 28 Z M 10.03125 34.875C10.476563 40.53125 15.230469 45 21 45L29 45C34.769531 45 39.523438 40.53125 39.96875 34.875C39.660156 34.949219 39.332031 35 39 35L11 35C10.667969 35 10.339844 34.949219 10.03125 34.875 Z M 15.9375 44.875C15.429688 45.789063 15 47.113281 15 49C15 49.554688 15.449219 50 16 50L34 50C34.007813 50 34.027344 50 34.03125 50C34.585938 50 35.03125 49.554688 35.03125 49C35.03125 48.929688 35.015625 48.847656 35 48.78125C34.96875 47.003906 34.550781 45.757813 34.0625 44.875C32.523438 45.59375 30.808594 46 29 46L21 46C19.191406 46 17.476563 45.59375 15.9375 44.875Z"></path></g></svg><p class="ams">4 Toilets</p></div><div class="dmrc"></div><!-- bed --><div class="am"><svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path fill-rule="evenodd" clip-rule="evenodd" d="M3 4C3 3.44772 2.55228 3 2 3C1.44772 3 1 3.44772 1 4V14V17V20C1 20.5523 1.44772 21 2 21C2.55228 21 3 20.5523 3 20V18H21V20C21 20.5523 21.4477 21 22 21C22.5523 21 23 20.5523 23 20V17V14V11C23 8.23858 20.7614 6 18 6H12C11.4477 6 11 6.44772 11 7V9.5C11 7.567 9.433 6 7.5 6C5.567 6 4 7.567 4 9.5C4 11.433 5.567 13 7.5 13H3V4ZM7.5 13C9.433 13 11 11.433 11 9.5V13H7.5ZM21 15V16H3V15H12H21ZM21 11V13H13V8H18C19.6569 8 21 9.34315 21 11ZM6 9.5C6 8.67157 6.67157 8 7.5 8C8.32843 8 9 8.67157 9 9.5C9 10.3284 8.32843 11 7.5 11C6.67157 11 6 10.3284 6 9.5Z" fill="#000000"></path> </g></svg><p class="ams">8 Beds</p></div><div class="dmrc"></div> <div class="am"><svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" transform="matrix(-1, 0, 0, 1, 0, 0)"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M6 6L3 3V21H21L18 18M6 6L9 9M6 6L5 7M9 9L12 12M9 9L8 10M12 12L15 15M12 12L11 13M15 15L14 16M15 15L18 18M18 18L17 19M6 12V18H12L6 12Z" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path> </g></svg><p class="ams"> 1965sqft</p></div> <div class="dmrc"></div><div class="am"><p class="ams">Parking space</p></div> </section>
+        <div class="us">
+          <p class="usd">Listed by</p>
+          <div class="ush">
+           <p class="usn">Homenest</p>
+            <svg viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path fill-rule="evenodd" clip-rule="evenodd" d="M14.6563 5.24291C15.4743 5.88358 16 6.8804 16 8C16 9.11964 15.4743 10.1165 14.6562 10.7572C14.7816 11.7886 14.4485 12.8652 13.6568 13.6569C12.8651 14.4486 11.7885 14.7817 10.7571 14.6563C10.1164 15.4743 9.1196 16 8 16C6.88038 16 5.88354 15.4743 5.24288 14.6562C4.21141 14.7817 3.13481 14.4485 2.34312 13.6568C1.55143 12.8652 1.2183 11.7886 1.34372 10.7571C0.525698 10.1164 0 9.1196 0 8C0 6.88038 0.525715 5.88354 1.34376 5.24288C1.21834 4.21141 1.55147 3.13481 2.34316 2.34312C3.13485 1.55143 4.21145 1.2183 5.24291 1.34372C5.88358 0.525698 6.8804 0 8 0C9.11964 0 10.1165 0.525732 10.7572 1.3438C11.7886 1.21838 12.8652 1.55152 13.6569 2.3432C14.4486 3.13488 14.7817 4.21146 14.6563 5.24291ZM12.2071 6.20711L10.7929 4.79289L7 8.58579L5.20711 6.79289L3.79289 8.20711L7 11.4142L12.2071 6.20711Z" fill="#20d99c"></path> </g></svg>
+          </div>
+        </div>
+       </section> <!-- cho -->
+      </a> 
+          <!-- Card End -->
+
+<!-- Card Here -->
+      <a class="cmain" href="./comingsoon.html">
+        <section class="iside"><div class="swiper" id="swp">
+           <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+              <!-- Slides -->
+              <img class="swiper-slide" src="images/house1.jpg">
+              <img class="swiper-slide" src="images/hoouse3.webp">
+              <img class="swiper-slide" src="images/house2.jpg">
+              <img class="swiper-slide" src="images/house4.jpg">
+              <img class="swiper-slide" src="images/house5.jpg">
+              <img class="swiper-slide" src="images/house6.jpg">
+              <img class="swiper-slide" src="images/house7.jpg">
+           </div>
+            <!-- If we need pagination -->
+            <div class="swiper-pagination"></div>
+            <!-- If we need navigation buttons -->
+           <div class="swiper-scrollbar"></div>
+           </div>
+         </section> <!-- img goes in here -->
+            <section class="cho">
+        <section class="nap"><p>New family home</p> <p><span class="pr">€1788</span><span class="mow">/Month</span></p></section>
+        <section class="lab"><p>Galway, County Galway</p><img src="images/berr.png" class="bei"></section>
+        <section class="d"><p>Cost efficient big home with 8 beds..</p></section>
+        <section class="aas"><div class="am"><svg fill="#000000" viewBox="0 0 50 50" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"><path d="M25 0C17.28125 0 11 7.625 11 17C11 19.980469 11.632813 22.820313 12.84375 25.375C13.167969 25.144531 13.574219 25 14 25L17 25C18.101563 25 19 25.898438 19 27L25 27C21.132813 27 18 22.523438 18 17C18 11.476563 21.132813 7 25 7C28.867188 7 32 11.476563 32 17C32 22.523438 28.867188 27 25 27L31 27C31 25.898438 31.898438 25 33 25L36 25C36.425781 25 36.832031 25.144531 37.15625 25.375C38.367188 22.820313 39 19.980469 39 17C39 7.625 32.71875 0 25 0 Z M 14 26C13.449219 26 13 26.445313 13 27L18 27C18 26.445313 17.550781 26 17 26 Z M 33 26C32.445313 26 32 26.445313 32 27L37 27C37 26.445313 36.554688 26 36 26 Z M 11 28C9.347656 28 8 29.347656 8 31C8 32.652344 9.347656 34 11 34L39 34C40.652344 34 42 32.652344 42 31C42 29.347656 40.652344 28 39 28 Z M 10.03125 34.875C10.476563 40.53125 15.230469 45 21 45L29 45C34.769531 45 39.523438 40.53125 39.96875 34.875C39.660156 34.949219 39.332031 35 39 35L11 35C10.667969 35 10.339844 34.949219 10.03125 34.875 Z M 15.9375 44.875C15.429688 45.789063 15 47.113281 15 49C15 49.554688 15.449219 50 16 50L34 50C34.007813 50 34.027344 50 34.03125 50C34.585938 50 35.03125 49.554688 35.03125 49C35.03125 48.929688 35.015625 48.847656 35 48.78125C34.96875 47.003906 34.550781 45.757813 34.0625 44.875C32.523438 45.59375 30.808594 46 29 46L21 46C19.191406 46 17.476563 45.59375 15.9375 44.875Z"></path></g></svg><p class="ams">4 Toilets</p></div><div class="dmrc"></div><!-- bed --><div class="am"><svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path fill-rule="evenodd" clip-rule="evenodd" d="M3 4C3 3.44772 2.55228 3 2 3C1.44772 3 1 3.44772 1 4V14V17V20C1 20.5523 1.44772 21 2 21C2.55228 21 3 20.5523 3 20V18H21V20C21 20.5523 21.4477 21 22 21C22.5523 21 23 20.5523 23 20V17V14V11C23 8.23858 20.7614 6 18 6H12C11.4477 6 11 6.44772 11 7V9.5C11 7.567 9.433 6 7.5 6C5.567 6 4 7.567 4 9.5C4 11.433 5.567 13 7.5 13H3V4ZM7.5 13C9.433 13 11 11.433 11 9.5V13H7.5ZM21 15V16H3V15H12H21ZM21 11V13H13V8H18C19.6569 8 21 9.34315 21 11ZM6 9.5C6 8.67157 6.67157 8 7.5 8C8.32843 8 9 8.67157 9 9.5C9 10.3284 8.32843 11 7.5 11C6.67157 11 6 10.3284 6 9.5Z" fill="#000000"></path> </g></svg><p class="ams">8 Beds</p></div><div class="dmrc"></div> <div class="am"><svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" transform="matrix(-1, 0, 0, 1, 0, 0)"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M6 6L3 3V21H21L18 18M6 6L9 9M6 6L5 7M9 9L12 12M9 9L8 10M12 12L15 15M12 12L11 13M15 15L14 16M15 15L18 18M18 18L17 19M6 12V18H12L6 12Z" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path> </g></svg><p class="ams"> 1965sqft</p></div> <div class="dmrc"></div><div class="am"><p class="ams">Parking space</p></div> </section>
+        <div class="us">
+          <p class="usd">Listed by</p>
+          <div class="ush">
+           <p class="usn">Homenest</p>
+            <svg viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path fill-rule="evenodd" clip-rule="evenodd" d="M14.6563 5.24291C15.4743 5.88358 16 6.8804 16 8C16 9.11964 15.4743 10.1165 14.6562 10.7572C14.7816 11.7886 14.4485 12.8652 13.6568 13.6569C12.8651 14.4486 11.7885 14.7817 10.7571 14.6563C10.1164 15.4743 9.1196 16 8 16C6.88038 16 5.88354 15.4743 5.24288 14.6562C4.21141 14.7817 3.13481 14.4485 2.34312 13.6568C1.55143 12.8652 1.2183 11.7886 1.34372 10.7571C0.525698 10.1164 0 9.1196 0 8C0 6.88038 0.525715 5.88354 1.34376 5.24288C1.21834 4.21141 1.55147 3.13481 2.34316 2.34312C3.13485 1.55143 4.21145 1.2183 5.24291 1.34372C5.88358 0.525698 6.8804 0 8 0C9.11964 0 10.1165 0.525732 10.7572 1.3438C11.7886 1.21838 12.8652 1.55152 13.6569 2.3432C14.4486 3.13488 14.7817 4.21146 14.6563 5.24291ZM12.2071 6.20711L10.7929 4.79289L7 8.58579L5.20711 6.79289L3.79289 8.20711L7 11.4142L12.2071 6.20711Z" fill="#20d99c"></path> </g></svg>
+          </div>
+        </div>
+       </section> <!-- cho -->
+      </a> 
+          <!-- Card End -->
+
+<!-- Card Here -->
+      <a class="cmain" href="./comingsoon.html">
+        <section class="iside"><div class="swiper" id="swp">
+           <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+              <!-- Slides -->
+              <img class="swiper-slide" src="images/house1.jpg">
+              <img class="swiper-slide" src="images/hoouse3.webp">
+              <img class="swiper-slide" src="images/house2.jpg">
+              <img class="swiper-slide" src="images/house4.jpg">
+              <img class="swiper-slide" src="images/house5.jpg">
+              <img class="swiper-slide" src="images/house6.jpg">
+              <img class="swiper-slide" src="images/house7.jpg">
+           </div>
+            <!-- If we need pagination -->
+            <div class="swiper-pagination"></div>
+            <!-- If we need navigation buttons -->
+           <div class="swiper-scrollbar"></div>
+           </div>
+         </section> <!-- img goes in here -->
+            <section class="cho">
+        <section class="nap"><p>New family home</p> <p><span class="pr">€1788</span><span class="mow">/Month</span></p></section>
+        <section class="lab"><p>Galway, County Galway</p><img src="images/berr.png" class="bei"></section>
+        <section class="d"><p>Cost efficient big home with 8 beds..</p></section>
+        <section class="aas"><div class="am"><svg fill="#000000" viewBox="0 0 50 50" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"><path d="M25 0C17.28125 0 11 7.625 11 17C11 19.980469 11.632813 22.820313 12.84375 25.375C13.167969 25.144531 13.574219 25 14 25L17 25C18.101563 25 19 25.898438 19 27L25 27C21.132813 27 18 22.523438 18 17C18 11.476563 21.132813 7 25 7C28.867188 7 32 11.476563 32 17C32 22.523438 28.867188 27 25 27L31 27C31 25.898438 31.898438 25 33 25L36 25C36.425781 25 36.832031 25.144531 37.15625 25.375C38.367188 22.820313 39 19.980469 39 17C39 7.625 32.71875 0 25 0 Z M 14 26C13.449219 26 13 26.445313 13 27L18 27C18 26.445313 17.550781 26 17 26 Z M 33 26C32.445313 26 32 26.445313 32 27L37 27C37 26.445313 36.554688 26 36 26 Z M 11 28C9.347656 28 8 29.347656 8 31C8 32.652344 9.347656 34 11 34L39 34C40.652344 34 42 32.652344 42 31C42 29.347656 40.652344 28 39 28 Z M 10.03125 34.875C10.476563 40.53125 15.230469 45 21 45L29 45C34.769531 45 39.523438 40.53125 39.96875 34.875C39.660156 34.949219 39.332031 35 39 35L11 35C10.667969 35 10.339844 34.949219 10.03125 34.875 Z M 15.9375 44.875C15.429688 45.789063 15 47.113281 15 49C15 49.554688 15.449219 50 16 50L34 50C34.007813 50 34.027344 50 34.03125 50C34.585938 50 35.03125 49.554688 35.03125 49C35.03125 48.929688 35.015625 48.847656 35 48.78125C34.96875 47.003906 34.550781 45.757813 34.0625 44.875C32.523438 45.59375 30.808594 46 29 46L21 46C19.191406 46 17.476563 45.59375 15.9375 44.875Z"></path></g></svg><p class="ams">4 Toilets</p></div><div class="dmrc"></div><!-- bed --><div class="am"><svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path fill-rule="evenodd" clip-rule="evenodd" d="M3 4C3 3.44772 2.55228 3 2 3C1.44772 3 1 3.44772 1 4V14V17V20C1 20.5523 1.44772 21 2 21C2.55228 21 3 20.5523 3 20V18H21V20C21 20.5523 21.4477 21 22 21C22.5523 21 23 20.5523 23 20V17V14V11C23 8.23858 20.7614 6 18 6H12C11.4477 6 11 6.44772 11 7V9.5C11 7.567 9.433 6 7.5 6C5.567 6 4 7.567 4 9.5C4 11.433 5.567 13 7.5 13H3V4ZM7.5 13C9.433 13 11 11.433 11 9.5V13H7.5ZM21 15V16H3V15H12H21ZM21 11V13H13V8H18C19.6569 8 21 9.34315 21 11ZM6 9.5C6 8.67157 6.67157 8 7.5 8C8.32843 8 9 8.67157 9 9.5C9 10.3284 8.32843 11 7.5 11C6.67157 11 6 10.3284 6 9.5Z" fill="#000000"></path> </g></svg><p class="ams">8 Beds</p></div><div class="dmrc"></div> <div class="am"><svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" transform="matrix(-1, 0, 0, 1, 0, 0)"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M6 6L3 3V21H21L18 18M6 6L9 9M6 6L5 7M9 9L12 12M9 9L8 10M12 12L15 15M12 12L11 13M15 15L14 16M15 15L18 18M18 18L17 19M6 12V18H12L6 12Z" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path> </g></svg><p class="ams"> 1965sqft</p></div> <div class="dmrc"></div><div class="am"><p class="ams">Parking space</p></div> </section>
+        <div class="us">
+          <p class="usd">Listed by</p>
+          <div class="ush">
+           <p class="usn">Homenest</p>
+            <svg viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path fill-rule="evenodd" clip-rule="evenodd" d="M14.6563 5.24291C15.4743 5.88358 16 6.8804 16 8C16 9.11964 15.4743 10.1165 14.6562 10.7572C14.7816 11.7886 14.4485 12.8652 13.6568 13.6569C12.8651 14.4486 11.7885 14.7817 10.7571 14.6563C10.1164 15.4743 9.1196 16 8 16C6.88038 16 5.88354 15.4743 5.24288 14.6562C4.21141 14.7817 3.13481 14.4485 2.34312 13.6568C1.55143 12.8652 1.2183 11.7886 1.34372 10.7571C0.525698 10.1164 0 9.1196 0 8C0 6.88038 0.525715 5.88354 1.34376 5.24288C1.21834 4.21141 1.55147 3.13481 2.34316 2.34312C3.13485 1.55143 4.21145 1.2183 5.24291 1.34372C5.88358 0.525698 6.8804 0 8 0C9.11964 0 10.1165 0.525732 10.7572 1.3438C11.7886 1.21838 12.8652 1.55152 13.6569 2.3432C14.4486 3.13488 14.7817 4.21146 14.6563 5.24291ZM12.2071 6.20711L10.7929 4.79289L7 8.58579L5.20711 6.79289L3.79289 8.20711L7 11.4142L12.2071 6.20711Z" fill="#20d99c"></path> </g></svg>
+          </div>
+        </div>
+       </section> <!-- cho -->
+      </a> 
+          <!-- Card End -->
+
+<!-- Card Here -->
+      <a class="cmain" href="./comingsoon.html">
+        <section class="iside"><div class="swiper" id="swp">
+           <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+              <!-- Slides -->
+              <img class="swiper-slide" src="images/house1.jpg">
+              <img class="swiper-slide" src="images/hoouse3.webp">
+              <img class="swiper-slide" src="images/house2.jpg">
+              <img class="swiper-slide" src="images/house4.jpg">
+              <img class="swiper-slide" src="images/house5.jpg">
+              <img class="swiper-slide" src="images/house6.jpg">
+              <img class="swiper-slide" src="images/house7.jpg">
+           </div>
+            <!-- If we need pagination -->
+            <div class="swiper-pagination"></div>
+            <!-- If we need navigation buttons -->
+           <div class="swiper-scrollbar"></div>
+           </div>
+         </section> <!-- img goes in here -->
+            <section class="cho">
+        <section class="nap"><p>New family home</p> <p><span class="pr">€1788</span><span class="mow">/Month</span></p></section>
+        <section class="lab"><p>Galway, County Galway</p><img src="images/berr.png" class="bei"></section>
+        <section class="d"><p>Cost efficient big home with 8 beds..</p></section>
+        <section class="aas"><div class="am"><svg fill="#000000" viewBox="0 0 50 50" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"><path d="M25 0C17.28125 0 11 7.625 11 17C11 19.980469 11.632813 22.820313 12.84375 25.375C13.167969 25.144531 13.574219 25 14 25L17 25C18.101563 25 19 25.898438 19 27L25 27C21.132813 27 18 22.523438 18 17C18 11.476563 21.132813 7 25 7C28.867188 7 32 11.476563 32 17C32 22.523438 28.867188 27 25 27L31 27C31 25.898438 31.898438 25 33 25L36 25C36.425781 25 36.832031 25.144531 37.15625 25.375C38.367188 22.820313 39 19.980469 39 17C39 7.625 32.71875 0 25 0 Z M 14 26C13.449219 26 13 26.445313 13 27L18 27C18 26.445313 17.550781 26 17 26 Z M 33 26C32.445313 26 32 26.445313 32 27L37 27C37 26.445313 36.554688 26 36 26 Z M 11 28C9.347656 28 8 29.347656 8 31C8 32.652344 9.347656 34 11 34L39 34C40.652344 34 42 32.652344 42 31C42 29.347656 40.652344 28 39 28 Z M 10.03125 34.875C10.476563 40.53125 15.230469 45 21 45L29 45C34.769531 45 39.523438 40.53125 39.96875 34.875C39.660156 34.949219 39.332031 35 39 35L11 35C10.667969 35 10.339844 34.949219 10.03125 34.875 Z M 15.9375 44.875C15.429688 45.789063 15 47.113281 15 49C15 49.554688 15.449219 50 16 50L34 50C34.007813 50 34.027344 50 34.03125 50C34.585938 50 35.03125 49.554688 35.03125 49C35.03125 48.929688 35.015625 48.847656 35 48.78125C34.96875 47.003906 34.550781 45.757813 34.0625 44.875C32.523438 45.59375 30.808594 46 29 46L21 46C19.191406 46 17.476563 45.59375 15.9375 44.875Z"></path></g></svg><p class="ams">4 Toilets</p></div><div class="dmrc"></div><!-- bed --><div class="am"><svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path fill-rule="evenodd" clip-rule="evenodd" d="M3 4C3 3.44772 2.55228 3 2 3C1.44772 3 1 3.44772 1 4V14V17V20C1 20.5523 1.44772 21 2 21C2.55228 21 3 20.5523 3 20V18H21V20C21 20.5523 21.4477 21 22 21C22.5523 21 23 20.5523 23 20V17V14V11C23 8.23858 20.7614 6 18 6H12C11.4477 6 11 6.44772 11 7V9.5C11 7.567 9.433 6 7.5 6C5.567 6 4 7.567 4 9.5C4 11.433 5.567 13 7.5 13H3V4ZM7.5 13C9.433 13 11 11.433 11 9.5V13H7.5ZM21 15V16H3V15H12H21ZM21 11V13H13V8H18C19.6569 8 21 9.34315 21 11ZM6 9.5C6 8.67157 6.67157 8 7.5 8C8.32843 8 9 8.67157 9 9.5C9 10.3284 8.32843 11 7.5 11C6.67157 11 6 10.3284 6 9.5Z" fill="#000000"></path> </g></svg><p class="ams">8 Beds</p></div><div class="dmrc"></div> <div class="am"><svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" transform="matrix(-1, 0, 0, 1, 0, 0)"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M6 6L3 3V21H21L18 18M6 6L9 9M6 6L5 7M9 9L12 12M9 9L8 10M12 12L15 15M12 12L11 13M15 15L14 16M15 15L18 18M18 18L17 19M6 12V18H12L6 12Z" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path> </g></svg><p class="ams"> 1965sqft</p></div> <div class="dmrc"></div><div class="am"><p class="ams">Parking space</p></div> </section>
+        <div class="us">
+          <p class="usd">Listed by</p>
+          <div class="ush">
+           <p class="usn">Homenest</p>
+            <svg viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path fill-rule="evenodd" clip-rule="evenodd" d="M14.6563 5.24291C15.4743 5.88358 16 6.8804 16 8C16 9.11964 15.4743 10.1165 14.6562 10.7572C14.7816 11.7886 14.4485 12.8652 13.6568 13.6569C12.8651 14.4486 11.7885 14.7817 10.7571 14.6563C10.1164 15.4743 9.1196 16 8 16C6.88038 16 5.88354 15.4743 5.24288 14.6562C4.21141 14.7817 3.13481 14.4485 2.34312 13.6568C1.55143 12.8652 1.2183 11.7886 1.34372 10.7571C0.525698 10.1164 0 9.1196 0 8C0 6.88038 0.525715 5.88354 1.34376 5.24288C1.21834 4.21141 1.55147 3.13481 2.34316 2.34312C3.13485 1.55143 4.21145 1.2183 5.24291 1.34372C5.88358 0.525698 6.8804 0 8 0C9.11964 0 10.1165 0.525732 10.7572 1.3438C11.7886 1.21838 12.8652 1.55152 13.6569 2.3432C14.4486 3.13488 14.7817 4.21146 14.6563 5.24291ZM12.2071 6.20711L10.7929 4.79289L7 8.58579L5.20711 6.79289L3.79289 8.20711L7 11.4142L12.2071 6.20711Z" fill="#20d99c"></path> </g></svg>
+          </div>
+        </div>
+       </section> <!-- cho -->
+      </a> 
+          <!-- Card End -->
+
+<!-- Card Here -->
+      <a class="cmain" href="./comingsoon.html">
+        <section class="iside"><div class="swiper" id="swp">
+           <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+              <!-- Slides -->
+              <img class="swiper-slide" src="images/house1.jpg">
+              <img class="swiper-slide" src="images/hoouse3.webp">
+              <img class="swiper-slide" src="images/house2.jpg">
+              <img class="swiper-slide" src="images/house4.jpg">
+              <img class="swiper-slide" src="images/house5.jpg">
+              <img class="swiper-slide" src="images/house6.jpg">
+              <img class="swiper-slide" src="images/house7.jpg">
+           </div>
+            <!-- If we need pagination -->
+            <div class="swiper-pagination"></div>
+            <!-- If we need navigation buttons -->
+           <div class="swiper-scrollbar"></div>
+           </div>
+         </section> <!-- img goes in here -->
+            <section class="cho">
+        <section class="nap"><p>New family home</p> <p><span class="pr">€1788</span><span class="mow">/Month</span></p></section>
+        <section class="lab"><p>Galway, County Galway</p><img src="images/berr.png" class="bei"></section>
+        <section class="d"><p>Cost efficient big home with 8 beds..</p></section>
+        <section class="aas"><div class="am"><svg fill="#000000" viewBox="0 0 50 50" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"><path d="M25 0C17.28125 0 11 7.625 11 17C11 19.980469 11.632813 22.820313 12.84375 25.375C13.167969 25.144531 13.574219 25 14 25L17 25C18.101563 25 19 25.898438 19 27L25 27C21.132813 27 18 22.523438 18 17C18 11.476563 21.132813 7 25 7C28.867188 7 32 11.476563 32 17C32 22.523438 28.867188 27 25 27L31 27C31 25.898438 31.898438 25 33 25L36 25C36.425781 25 36.832031 25.144531 37.15625 25.375C38.367188 22.820313 39 19.980469 39 17C39 7.625 32.71875 0 25 0 Z M 14 26C13.449219 26 13 26.445313 13 27L18 27C18 26.445313 17.550781 26 17 26 Z M 33 26C32.445313 26 32 26.445313 32 27L37 27C37 26.445313 36.554688 26 36 26 Z M 11 28C9.347656 28 8 29.347656 8 31C8 32.652344 9.347656 34 11 34L39 34C40.652344 34 42 32.652344 42 31C42 29.347656 40.652344 28 39 28 Z M 10.03125 34.875C10.476563 40.53125 15.230469 45 21 45L29 45C34.769531 45 39.523438 40.53125 39.96875 34.875C39.660156 34.949219 39.332031 35 39 35L11 35C10.667969 35 10.339844 34.949219 10.03125 34.875 Z M 15.9375 44.875C15.429688 45.789063 15 47.113281 15 49C15 49.554688 15.449219 50 16 50L34 50C34.007813 50 34.027344 50 34.03125 50C34.585938 50 35.03125 49.554688 35.03125 49C35.03125 48.929688 35.015625 48.847656 35 48.78125C34.96875 47.003906 34.550781 45.757813 34.0625 44.875C32.523438 45.59375 30.808594 46 29 46L21 46C19.191406 46 17.476563 45.59375 15.9375 44.875Z"></path></g></svg><p class="ams">4 Toilets</p></div><div class="dmrc"></div><!-- bed --><div class="am"><svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path fill-rule="evenodd" clip-rule="evenodd" d="M3 4C3 3.44772 2.55228 3 2 3C1.44772 3 1 3.44772 1 4V14V17V20C1 20.5523 1.44772 21 2 21C2.55228 21 3 20.5523 3 20V18H21V20C21 20.5523 21.4477 21 22 21C22.5523 21 23 20.5523 23 20V17V14V11C23 8.23858 20.7614 6 18 6H12C11.4477 6 11 6.44772 11 7V9.5C11 7.567 9.433 6 7.5 6C5.567 6 4 7.567 4 9.5C4 11.433 5.567 13 7.5 13H3V4ZM7.5 13C9.433 13 11 11.433 11 9.5V13H7.5ZM21 15V16H3V15H12H21ZM21 11V13H13V8H18C19.6569 8 21 9.34315 21 11ZM6 9.5C6 8.67157 6.67157 8 7.5 8C8.32843 8 9 8.67157 9 9.5C9 10.3284 8.32843 11 7.5 11C6.67157 11 6 10.3284 6 9.5Z" fill="#000000"></path> </g></svg><p class="ams">8 Beds</p></div><div class="dmrc"></div> <div class="am"><svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" transform="matrix(-1, 0, 0, 1, 0, 0)"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M6 6L3 3V21H21L18 18M6 6L9 9M6 6L5 7M9 9L12 12M9 9L8 10M12 12L15 15M12 12L11 13M15 15L14 16M15 15L18 18M18 18L17 19M6 12V18H12L6 12Z" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path> </g></svg><p class="ams"> 1965sqft</p></div> <div class="dmrc"></div><div class="am"><p class="ams">Parking space</p></div> </section>
+        <div class="us">
+          <p class="usd">Listed by</p>
+          <div class="ush">
+           <p class="usn">Homenest</p>
+            <svg viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path fill-rule="evenodd" clip-rule="evenodd" d="M14.6563 5.24291C15.4743 5.88358 16 6.8804 16 8C16 9.11964 15.4743 10.1165 14.6562 10.7572C14.7816 11.7886 14.4485 12.8652 13.6568 13.6569C12.8651 14.4486 11.7885 14.7817 10.7571 14.6563C10.1164 15.4743 9.1196 16 8 16C6.88038 16 5.88354 15.4743 5.24288 14.6562C4.21141 14.7817 3.13481 14.4485 2.34312 13.6568C1.55143 12.8652 1.2183 11.7886 1.34372 10.7571C0.525698 10.1164 0 9.1196 0 8C0 6.88038 0.525715 5.88354 1.34376 5.24288C1.21834 4.21141 1.55147 3.13481 2.34316 2.34312C3.13485 1.55143 4.21145 1.2183 5.24291 1.34372C5.88358 0.525698 6.8804 0 8 0C9.11964 0 10.1165 0.525732 10.7572 1.3438C11.7886 1.21838 12.8652 1.55152 13.6569 2.3432C14.4486 3.13488 14.7817 4.21146 14.6563 5.24291ZM12.2071 6.20711L10.7929 4.79289L7 8.58579L5.20711 6.79289L3.79289 8.20711L7 11.4142L12.2071 6.20711Z" fill="#20d99c"></path> </g></svg>
+          </div>
+        </div>
+       </section> <!-- cho -->
+      </a> 
+          <!-- Card End -->
+
+
+    <script type="text/javascript" src="./frontendjavascript/navs.js"></script>
+  	<script type="text/javascript" src="./frontendjavascript/ptype.js"></script>
+  	<script type="text/javascript" src="./frontendjavascript/navs.js"></script>
+  </body>
+</html>
